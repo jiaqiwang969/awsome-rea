@@ -1,0 +1,137 @@
+[
+  {
+    "id": "diskdude-reconstruction",
+    "name": "DiskDude reconstruction",
+    "target": "DiskDude 1.0.1",
+    "repo": "https://github.com/heictojpgpics/DiskDude",
+    "category": "desktop",
+    "stage": "partial",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/heictojpgpics/DiskDude/blob/main/README.md",
+      "https://github.com/heictojpgpics/DiskDude/blob/main/docs/visual-evidence/README.md"
+    ],
+    "summary": {
+      "en": "Swift reconstruction of the macOS disk analyzer, including scanning, duplicate detection, visualizations, monitoring and snapshots.",
+      "zh-CN": "使用 Swift 重建 macOS 磁盘分析器，包含扫描、重复文件检测、可视化、监测和快照。"
+    },
+    "rea": {
+      "en": "The author credits REA 6.4.0 over Ghidra with procedure and string analysis alongside Swift metadata recovery and other tools.",
+      "zh-CN": "作者明确记录 REA 6.4.0 通过 Ghidra 分析函数和字符串，并结合 Swift 元数据恢复及其他工具。"
+    },
+    "limitations": {
+      "en": "UI differences remain, and the claimed byte-exact DMG rebuild carries the original executable rather than proving a byte-identical build of the recovered Swift source.",
+      "zh-CN": "界面仍有差异，所称逐字节一致的 DMG 重建保留了原始可执行文件，不能证明恢复的 Swift 源码编译结果逐字节一致。"
+    },
+    "created_at": "2026-10-11T18:44:08Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "mikropuhe",
+    "name": "MikroPuhe / puhu",
+    "target": "Timehouse MikroPuhe 1.0 / PUHU.EXE (1990)",
+    "repo": "https://github.com/WokenBits/mikropuhe",
+    "category": "media",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/WokenBits/mikropuhe/blob/main/docs/method.md",
+      "https://github.com/WokenBits/mikropuhe/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "C port of the Finnish DOS speech synthesizer and its text interface for Linux, macOS and Windows.",
+      "zh-CN": "将芬兰语 DOS 语音合成器及文本界面移植为 C 程序，可在 Linux、macOS 和 Windows 使用。"
+    },
+    "rea": {
+      "en": "The method records REA 6.2.0 with Ghidra for procedure instructions, calls and pseudocode, followed by comparisons against the original in a Unicorn emulator.",
+      "zh-CN": "方法文档记录了使用 REA 6.2.0 与 Ghidra 获取函数指令、调用和伪代码，再与 Unicorn 模拟器中的原程序对照。"
+    },
+    "limitations": {
+      "en": "Original program and voice files must be supplied separately, three of 89 tested sample streams differ slightly, and the repository grants no reuse or redistribution license.",
+      "zh-CN": "原程序和音色文件须另行提供，89 组测试中有 3 组采样流存在微小差异，仓库未授予复用或再分发许可。"
+    },
+    "created_at": "2026-10-11T13:23:00Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "touchmiddle",
+    "name": "TouchMiddle",
+    "target": "BetterTouchTool 6.908 (arm64)",
+    "repo": "https://github.com/ilovetai1/TouchMiddle",
+    "category": "desktop",
+    "stage": "prototype",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/ilovetai1/TouchMiddle/blob/main/README.md",
+      "https://github.com/ilovetai1/TouchMiddle/blob/main/touchmiddle/Sources/CTouchBridge/CTouchBridge.c"
+    ],
+    "summary": {
+      "en": "Native Swift macOS trackpad utility with middle click, configurable tap gestures, shortcut output and per-application rules.",
+      "zh-CN": "原生 Swift macOS 触控板工具，包含中键、可配置点按手势、快捷键输出和按应用设置规则。"
+    },
+    "rea": {
+      "en": "The author describes REA and Ghidra investigation of BetterTouchTool architecture and successful decompilation of a small XPC helper as design input.",
+      "zh-CN": "作者说明通过 REA 和 Ghidra 调查 BetterTouchTool 架构，并成功反编译小型 XPC 辅助程序，为实现提供设计线索。"
+    },
+    "limitations": {
+      "en": "Full analysis of the main binary timed out, original research records remain local, and the project neither reproduces all BTT features nor establishes identical gesture algorithms.",
+      "zh-CN": "主程序完整分析超时，原始研究记录保留在本机，项目未覆盖 BTT 全部功能，也未证明手势算法相同。"
+    },
+    "created_at": "2026-10-11T13:59:52Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "feishu-rea",
+    "name": "Feishu REA research",
+    "target": "Feishu 8.1.17 for macOS (arm64)",
+    "repo": "https://github.com/jiayan-ai/feishu-rea",
+    "category": "desktop",
+    "stage": "research",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/jiayan-ai/feishu-rea/blob/main/README.md",
+      "https://github.com/jiayan-ai/feishu-rea/blob/main/evidence/rea-lark-api-summary.json"
+    ],
+    "summary": {
+      "en": "Original inventory and reproduction scripts accompany a static study of Feishu modules, native components and web-to-host bridges.",
+      "zh-CN": "公开原创清单与复现脚本，以及飞书模块、原生组件和 Web 与宿主桥接的静态研究。"
+    },
+    "rea": {
+      "en": "A published evidence index records REA 6.4.0 parsing one JavaScript file in lark-api.asar, with evidence IDs and partial semantic coverage.",
+      "zh-CN": "公开证据索引记录 REA 6.4.0 解析 lark-api.asar 内的一个 JavaScript 文件，包含证据 ID 和部分语义覆盖说明。"
+    },
+    "limitations": {
+      "en": "REA coverage is limited to that ASAR file, 13,406 semantic unknowns remain, and the repository provides neither a replacement client nor recovered messaging or server implementations.",
+      "zh-CN": "REA 覆盖限于该 ASAR 文件，仍有 13,406 项语义未知，仓库不提供替代客户端或恢复的消息与服务端实现。"
+    },
+    "created_at": "2026-10-12T03:55:05Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "rea-video-codec-study",
+    "name": "REA video codec study",
+    "target": "ZSpace Windows client 2.44.2026080401.267 / UZPlayer",
+    "repo": "https://github.com/qinyishcn/rea-video-codec-study",
+    "category": "media",
+    "stage": "research",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/qinyishcn/rea-video-codec-study/blob/main/reports/codec_reverse_engineering.md",
+      "https://github.com/qinyishcn/rea-video-codec-study/blob/main/experiments/codec_lab/README.md"
+    ],
+    "summary": {
+      "en": "Static ZSpace playback research is paired with an original C/FFmpeg transcoding experiment, verification scripts and published analysis records.",
+      "zh-CN": "极空间播放链路静态研究，配套公开原创 C/FFmpeg 转码实验、验证脚本和分析记录。"
+    },
+    "rea": {
+      "en": "REA 6.3.0 analyzed 15 extracted JavaScript function initializers and used Ghidra to recover configuration fields from the separate controlled native experiment.",
+      "zh-CN": "REA 6.3.0 分析了提取的 15 个 JavaScript 函数初始化表达式，并通过 Ghidra 恢复独立受控原生实验的配置字段。"
+    },
+    "limitations": {
+      "en": "The public code is a controlled experiment, not recovered commercial codec code, and static client evidence establishes neither actual playback choices nor server encoding settings.",
+      "zh-CN": "公开代码是受控实验，并非恢复的商业 codec 代码；客户端静态证据不能确定实际播放选择或服务端编码设置。"
+    },
+    "created_at": "2026-10-12T10:14:33Z",
+    "reviewed_at": "2026-10-13"
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "id": "colonist-local",
+    "name": "Private Settlers / Colonist renderer lab",
+    "target": "Colonist.io browser client",
+    "repo": "https://github.com/natetan/colonist",
+    "category": "games",
+    "stage": "prototype",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/natetan/colonist/blob/main/research/game-action-protocol.md",
+      "https://github.com/natetan/colonist/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "A local multiplayer board-game implementation with bots, persistence and an experimental adapter for the original Colonist board renderer.",
+      "zh-CN": "本地多人桌游实现，提供机器人、存档和实验性的原版 Colonist 棋盘渲染器适配。"
+    },
+    "rea": {
+      "en": "REA analyzed downloaded JavaScript bundles, with retained evidence IDs for action contracts and UI modules alongside reusable inspection tools.",
+      "zh-CN": "使用 REA 分析下载的 JavaScript 包，记录动作协议和界面模块的证据编号，并公开可复用检查工具。"
+    },
+    "limitations": {
+      "en": "The local rules and server are independent, production protocol compatibility is unverified, and the renderer experiment requires separately obtained original bundles and assets.",
+      "zh-CN": "本地规则和服务器为独立实现，尚未验证生产协议兼容性，渲染器实验需要另外取得原版程序包和资源。"
+    },
+    "created_at": "2026-10-13T03:32:46Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "creative-destruction-reborn",
+    "name": "Creative Destruction Reborn",
+    "target": "Creative Destruction PC 3.0.210.0",
+    "repo": "https://github.com/crasyimperior/creative-destruction-reborn",
+    "category": "games",
+    "stage": "prototype",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/crasyimperior/creative-destruction-reborn/blob/main/README.md",
+      "https://github.com/crasyimperior/creative-destruction-reborn/blob/main/reborn/server/offline_server.py"
+    ],
+    "summary": {
+      "en": "A Python offline server and client mod restoring local entry, character setup and the opening match sequence.",
+      "zh-CN": "Python 离线服务器和客户端模组，恢复本地进入游戏、角色设置及对局开场流程。"
+    },
+    "rea": {
+      "en": "The author explicitly credits REA for the reverse engineering, without publishing detailed REA call records.",
+      "zh-CN": "作者明确将逆向工作归功于 REA，但未公开详细调用记录。"
+    },
+    "limitations": {
+      "en": "Requires the original Windows game, while bots, weapons and damage, ground loot, the storm and complete battle-royale matches remain planned.",
+      "zh-CN": "需要原版 Windows 游戏，机器人、武器伤害、地面物资、风暴及完整大逃杀对局仍在计划中。"
+    },
+    "created_at": "2026-10-13T13:04:45Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "mystery-sdl",
+    "name": "Mystery SDL",
+    "target": "Microsoft Plus! for Windows 95 Mystery screen saver",
+    "repo": "https://github.com/viny182/mystery-sdl",
+    "category": "desktop",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/viny182/mystery-sdl/blob/main/README.md",
+      "https://github.com/viny182/mystery-sdl/blob/main/mystery_sdl.c"
+    ],
+    "summary": {
+      "en": "An SDL2/Linux recreation of the haunted-house screen saver with resource decoding, animation and an optional wide-screen mode.",
+      "zh-CN": "使用 SDL2 在 Linux 重建鬼屋屏保，提供资源解码、动画和可选宽屏模式。"
+    },
+    "rea": {
+      "en": "The author documents REA/Ghidra analysis of the plugin, callback table, sprite formats and timing, supplemented by disassembly and original-program comparisons under Wine.",
+      "zh-CN": "作者记录通过 REA/Ghidra 分析插件、回调表、精灵格式和计时，并辅以汇编核对及 Wine 下的原程序对比。"
+    },
+    "limitations": {
+      "en": "Requires original resources and omits the Windows configuration, password, preview and System Agent integration features.",
+      "zh-CN": "需要原版资源，未移植 Windows 配置、密码、预览及 System Agent 集成功能。"
+    },
+    "created_at": "2026-10-11T13:17:35Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "cuphead-apple-port-tools",
+    "name": "Cuphead Apple Port Tools",
+    "target": "Cuphead GOG Windows Mono installation",
+    "repo": "https://github.com/IgnacioPardo/cuphead-apple-port-tools",
+    "category": "games",
+    "stage": "compatibility",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/IgnacioPardo/cuphead-apple-port-tools/blob/main/README.md",
+      "https://github.com/IgnacioPardo/cuphead-apple-port-tools/blob/main/THIRD_PARTY.md"
+    ],
+    "summary": {
+      "en": "Python recovery tools and C# Apple-platform adapters for locally migrating a purchased Cuphead installation.",
+      "zh-CN": "公开 Python 恢复工具及 C# 苹果平台适配代码，用于在本地迁移已购买的 Cuphead。"
+    },
+    "rea": {
+      "en": "The author credits private REA 6.4.0 analysis of managed metadata, CIL portability and declared native dependencies during the original recovery.",
+      "zh-CN": "作者说明原始恢复阶段使用 REA 6.4.0 分析托管元数据、CIL 可移植性和声明的原生依赖，相关分析记录未公开。"
+    },
+    "limitations": {
+      "en": "Only original tooling is public, the complete migration remains partly manual, and the current scripts do not invoke REA or include the private playable game build.",
+      "zh-CN": "公开内容仅含自编工具，完整迁移仍有手工步骤，当前脚本不调用 REA，也不包含私有的可玩游戏构建。"
+    },
+    "created_at": "2026-10-13T00:44:36Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "motorstorm-mv-recomp",
+    "name": "MotorStorm Monument Valley recompilation tooling",
+    "target": "MotorStorm / MotorStorm: Monument Valley (PlayStation 3)",
+    "repo": "https://github.com/robbe1912/motorstorm-mv-recomp",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/robbe1912/motorstorm-mv-recomp/blob/main/docs/research/TRANSLATION.md",
+      "https://github.com/robbe1912/motorstorm-mv-recomp/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "Windows runner, translation tools and a modified ps3recomp runtime supporting an unfinished native reconstruction.",
+      "zh-CN": "公开 Windows 启动器、翻译工具和修改后的 ps3recomp 运行时，用于尚未完成的原生重建。"
+    },
+    "rea": {
+      "en": "After the normal Windows ELF admission failed, the author manually used REA's unchanged Java bridge to query an existing Ghidra project and cross-check selected graphics and wait routines.",
+      "zh-CN": "常规 Windows ELF 入口失败后，作者手动使用 REA 原有 Java 桥查询既有 Ghidra 工程，交叉核对部分图形及等待例程。"
+    },
+    "limitations": {
+      "en": "No playable native race is demonstrated, original game content remains separate, and the manual bridge experiment does not establish full REA provider support or complete function coverage.",
+      "zh-CN": "尚未展示可玩的原生比赛，原版游戏内容需另备，手动桥接实验不代表 REA 提供完整平台支持或函数覆盖。"
+    },
+    "created_at": "2026-10-10T21:36:19Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "redragon-controller",
+    "name": "Redragon Keyboard Controller",
+    "target": "Redragon keyboard USB HID control protocol",
+    "repo": "https://github.com/taskengineassistant/redragon-controller",
+    "category": "devices",
+    "stage": "prototype",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/taskengineassistant/redragon-controller/blob/master/README.md",
+      "https://github.com/taskengineassistant/redragon-controller/blob/master/src/redragon_controller/hid_transport.py"
+    ],
+    "summary": {
+      "en": "Python HID controller code with a PySide6 interface and HTTP API for keyboard lighting, remapping and profiles.",
+      "zh-CN": "Python HID 控制器代码，配有 PySide6 界面和 HTTP API，用于键盘灯效、键位映射及配置档。"
+    },
+    "rea": {
+      "en": "The README explicitly attributes its binary analysis and protocol notes to REA, without publishing target fingerprints or detailed tool records.",
+      "zh-CN": "README 明确将二进制分析和协议笔记归因于 REA，但未公开目标指纹或详细工具记录。"
+    },
+    "limitations": {
+      "en": "The K585 remains under reverse engineering and K552/K530 support is planned, so the published protocol and feature claims lack demonstrated hardware compatibility.",
+      "zh-CN": "K585 仍处于逆向阶段，K552/K530 支持尚在计划中，公开协议和功能描述缺少已展示的硬件兼容性验证。"
+    },
+    "created_at": "2026-10-12T21:49:39Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "pixel-watch-esim-writer",
+    "name": "Watch eSIM Helper",
+    "target": "Google Pixel Watch companion Android app 5.0.0.958206140",
+    "repo": "https://github.com/AllMySlop/pixel-watch-esim-writer",
+    "category": "limited",
+    "stage": "compatibility",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/AllMySlop/pixel-watch-esim-writer/blob/main/docs/companion-analysis.md",
+      "https://github.com/AllMySlop/pixel-watch-esim-writer/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "An Android helper scans an activation code and delegates watch eSIM installation to the original paired Pixel Watch companion app.",
+      "zh-CN": "Android 辅助应用扫描激活码，并将手表 eSIM 安装交给已配对的原版 Pixel Watch 伴侣应用。"
+    },
+    "rea": {
+      "en": "Although the README credits REA, the detailed report says its APK inspection failed because the JADX provider was missing and direct JADX performed the actual analysis.",
+      "zh-CN": "README 虽提及 REA，详细报告明确说明 APK 检查因缺少 JADX 提供方而失败，实际分析改由直接调用 JADX 完成。"
+    },
+    "limitations": {
+      "en": "Requires the original companion app and a paired watch; the author reports profile installation on a Pixel Watch 2 LTE but did not establish working mobile data or broad carrier compatibility.",
+      "zh-CN": "需要原版伴侣应用和已配对手表；作者报告在 Pixel Watch 2 LTE 上安装成功，但未证明移动数据可用或广泛运营商兼容性。"
+    },
+    "created_at": "2026-10-13T09:30:21Z",
+    "reviewed_at": "2026-10-13"
+  }
+]

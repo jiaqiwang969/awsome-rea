@@ -1,0 +1,29 @@
+[
+  {
+    "id": "review",
+    "name": "Review — Photoshop-style photo printing",
+    "target": "macOS Preview; Adobe Photoshop 2025 Print Settings",
+    "repo": "https://github.com/KingDomino/review",
+    "category": "desktop",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/KingDomino/review/blob/main/docs/photoshop-print-analysis.md",
+      "https://github.com/KingDomino/review/commit/14453a167af97a77a3f0f8859cae86a010f12fcc"
+    ],
+    "summary": {
+      "en": "Preview-style Rust viewer with a Photoshop-inspired photo-print dialog supporting placement, proportional sizing, PPI display, crop marks and PDF output.",
+      "zh-CN": "参考 Preview 的 Rust 查看器，另实现受 Photoshop 启发的照片打印对话框，支持定位、等比尺寸、PPI 显示、裁切标记和 PDF 输出。"
+    },
+    "rea": {
+      "en": "REA 6.4 inspect-macho identified Photoshop's imported printing APIs, combined with shipped layout resources and strings to inform an independent implementation.",
+      "zh-CN": "REA 6.4 inspect-macho 识别 Photoshop 导入的打印 API，结合发行版布局资源和字符串指导独立实现。"
+    },
+    "limitations": {
+      "en": "The Adobe-related work covers one print workflow, omits several print options, and neither decompiles Adobe code nor reconstructs Photoshop as a whole.",
+      "zh-CN": "Adobe 相关工作仅覆盖一条打印流程，仍缺多项打印设置，既未反编译 Adobe 代码，也未重建完整 Photoshop。"
+    },
+    "created_at": "2026-10-12T09:50:25Z",
+    "reviewed_at": "2026-10-13"
+  }
+]

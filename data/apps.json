@@ -1,0 +1,268 @@
+[
+  {
+    "id": "everything-for-mac",
+    "name": "EFM",
+    "target": "Everything 1.5",
+    "repo": "https://github.com/minsuRob/everything-for-mac",
+    "category": "desktop",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/minsuRob/everything-for-mac/blob/main/docs/analysis/REA-FINDINGS.md"
+    ],
+    "summary": {
+      "en": "A native macOS filename search application written in Swift and C, with indexing, search operators and filesystem updates.",
+      "zh-CN": "Swift 与 C 编写的 macOS 原生文件名搜索工具，包含索引、搜索语法和文件变更更新。"
+    },
+    "rea": {
+      "en": "Documents REA 6.4.0 and Ghidra analysis of the shipped Everything executable to inform the search design.",
+      "zh-CN": "记录了使用 REA 6.4.0 与 Ghidra 分析 Everything 发行程序，并据此设计搜索功能。"
+    },
+    "limitations": {
+      "en": "An independent macOS implementation; its reported benchmarks have not been reproduced by this catalog.",
+      "zh-CN": "属于独立的 macOS 实现；本目录未复现作者报告的性能数据。"
+    },
+    "created_at": "2026-10-13T10:03:47Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "glide",
+    "name": "Glide",
+    "target": "Screen Studio",
+    "repo": "https://github.com/michaelshimeles/glide",
+    "category": "media",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/michaelshimeles/glide/blob/main/analysis/SCREEN_STUDIO.md",
+      "https://github.com/michaelshimeles/glide/blob/main/PROGRESS.md"
+    ],
+    "summary": {
+      "en": "A Rust macOS screen recorder and editor with automatic zoom, cursor animation, captions and video export.",
+      "zh-CN": "Rust 编写的 macOS 录屏与编辑工具，包含自动缩放、光标动画、字幕和视频导出。"
+    },
+    "rea": {
+      "en": "REA analyzed the Electron application graph and Mach-O helper inventory; the native helpers were not decompiled.",
+      "zh-CN": "REA 分析了 Electron 应用图和 Mach-O 辅助程序结构，但未反编译原生辅助程序。"
+    },
+    "limitations": {
+      "en": "Live camera and iOS capture have unverified paths; this is a reconstruction of observed behavior.",
+      "zh-CN": "摄像头与 iOS 实录仍有未验证路径；项目重建的是观察到的行为。"
+    },
+    "created_at": "2026-10-13T03:49:21Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "qtranslate-re",
+    "name": "qtranslate-re",
+    "target": "QTranslate 6.10",
+    "repo": "https://github.com/quangdang46/QTranslate",
+    "category": "desktop",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/quangdang46/QTranslate/blob/main/docs/review/REA_AS_INTERFACE_2026-10-11.md",
+      "https://github.com/quangdang46/QTranslate/blob/main/docs/review/THEME_LOADER_AND_BGR_RETRACTION_2026-10-11.md"
+    ],
+    "summary": {
+      "en": "A Python translation client with provider plugins, popup UI, hotkeys, history and text-to-speech.",
+      "zh-CN": "Python 翻译客户端，包含服务插件、弹窗、快捷键、历史与文字朗读。"
+    },
+    "rea": {
+      "en": "REA with Ghidra checked plugin loading and theme parsing, including a documented correction of an earlier interpretation.",
+      "zh-CN": "REA 与 Ghidra 用于核对插件加载和主题解析，并留下对早期判断的纠错记录。"
+    },
+    "limitations": {
+      "en": "REA was introduced during an existing reconstruction; visual parity remains incomplete and translation depends on external providers.",
+      "zh-CN": "REA 在已有重建过程中加入；视觉一致性尚未完成，翻译依赖外部服务。"
+    },
+    "created_at": "2026-10-07T06:03:39Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "tuneox",
+    "name": "TuneOx",
+    "target": "rekordbox 7",
+    "repo": "https://github.com/sousa-stack/tuneox",
+    "category": "media",
+    "stage": "prototype",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/sousa-stack/tuneox/blob/main/CLAUDE.md",
+      "https://github.com/sousa-stack/tuneox/blob/main/docs/status.md"
+    ],
+    "summary": {
+      "en": "A Rust and Tauri DJ library manager with rekordbox import, waveform browsing and dual-player work.",
+      "zh-CN": "Rust 与 Tauri DJ 音乐库工具，已开展 rekordbox 导入、波形浏览和双播放器实现。"
+    },
+    "rea": {
+      "en": "The author explicitly credits REA with Ghidra for studying rekordbox; the public notes also draw on established community research.",
+      "zh-CN": "作者明确记录用 REA 与 Ghidra 研究 rekordbox，同时采用已有社区研究成果。"
+    },
+    "limitations": {
+      "en": "Pre-alpha, with no key lock and several deck features unfinished; full REA invocation evidence is not published.",
+      "zh-CN": "处于早期原型阶段，变速不变调及多项播放器功能未完成；未公开完整 REA 调用证据。"
+    },
+    "created_at": "2026-10-12T17:04:31Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "flowdeck",
+    "name": "Flowdeck",
+    "target": "Trello",
+    "repo": "https://github.com/utkarshraj2004/Flowdeck",
+    "category": "web",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/utkarshraj2004/Flowdeck/blob/main/research/evidence/E-session5.md"
+    ],
+    "summary": {
+      "en": "A self-hosted team board application with cards, permissions, realtime updates, table and calendar views.",
+      "zh-CN": "自托管团队看板，包含卡片、权限、实时同步、表格与日历视图。"
+    },
+    "rea": {
+      "en": "REA inspected Trello page structure, client scripts and network shapes during recorded behavior research.",
+      "zh-CN": "REA 在有记录的行为研究中观察 Trello 页面结构、客户端脚本和网络数据形状。"
+    },
+    "limitations": {
+      "en": "The backend is independently designed; server-side Trello source was not recovered, and long-running team use is untested.",
+      "zh-CN": "后端为独立设计，未恢复 Trello 服务端源码，也未完成长期团队使用验证。"
+    },
+    "created_at": "2026-10-11T15:46:38Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "terminal-rs",
+    "name": "terminal-rs",
+    "target": "TradingView chart behavior",
+    "repo": "https://github.com/michaelshimeles/terminal-rs",
+    "category": "web",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/michaelshimeles/terminal-rs/blob/master/docs/analysis/README.md"
+    ],
+    "summary": {
+      "en": "A Rust market-data terminal informed by TradingView chart interactions, layouts, shortcuts and paging.",
+      "zh-CN": "参考 TradingView 图表交互、布局、快捷键和分页方式实现的 Rust 行情终端。"
+    },
+    "rea": {
+      "en": "Website-mode REA captures of the public chart page are listed with evidence IDs and observation limits.",
+      "zh-CN": "列出 REA 网站模式对公开图表页的捕获证据 ID 与观察限制。"
+    },
+    "limitations": {
+      "en": "This is behavior research, not recovery of TradingView source or a Bloomberg binary.",
+      "zh-CN": "属于行为研究，未恢复 TradingView 源码，也未逆向 Bloomberg 二进制。"
+    },
+    "created_at": "2026-10-12T13:08:59Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "nixiangmingli",
+    "name": "nixiangmingli",
+    "target": "FateTell / FateMaster.AI",
+    "repo": "https://github.com/ds1828743190-oss/nixiangmingli",
+    "category": "web",
+    "stage": "prototype",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/ds1828743190-oss/nixiangmingli/blob/main/reverse/README.md",
+      "https://github.com/ds1828743190-oss/nixiangmingli/blob/main/reverse/fatetell/REPORT.md"
+    ],
+    "summary": {
+      "en": "A calendar-calculation and streaming-dialog backend prototype developed after studying two web products.",
+      "zh-CN": "研究两个网站产品后实现的历法计算与流式对话后端原型。"
+    },
+    "rea": {
+      "en": "Documents REA browser captures, script exports and partial application graphs, with conclusions tied to retained observations.",
+      "zh-CN": "记录 REA 浏览器捕获、脚本导出和部分应用图，并把结论对应到保留的观察记录。"
+    },
+    "limitations": {
+      "en": "Frontend observations informed a new backend; the original server implementation was not recovered.",
+      "zh-CN": "根据前端观察另行实现后端，未恢复原服务端实现。"
+    },
+    "created_at": "2026-10-12T11:54:26Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "lento",
+    "name": "Lento",
+    "target": "Transcribe! 9.70.1",
+    "repo": "https://github.com/andrew-vasquez/transcribe-rebuild",
+    "category": "limited",
+    "stage": "implementation",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/andrew-vasquez/transcribe-rebuild/blob/main/docs/REVERSE-ENGINEERING-EVIDENCE.md"
+    ],
+    "summary": {
+      "en": "A Swift macOS music-practice application with waveforms, looping, markers, spectrum views and speed control.",
+      "zh-CN": "Swift macOS 音乐练习工具，包含波形、循环、标记、频谱和速度控制。"
+    },
+    "rea": {
+      "en": "REA inspected the bundle and Mach-O metadata; deep native providers were unavailable and produced no pseudocode.",
+      "zh-CN": "REA 检查了应用包和 Mach-O 元数据；原生深度分析引擎不可用，未产生伪代码。"
+    },
+    "limitations": {
+      "en": "The rebuild also uses bundled help and runtime observations; its slowdown uses Apple TimePitch, not the original private algorithm.",
+      "zh-CN": "重建还依据内置帮助和运行时观察；减速使用 Apple TimePitch，未恢复原版私有算法。"
+    },
+    "created_at": "2026-10-09T20:18:19Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "mbrs",
+    "name": "mbrs / Modbus Studio",
+    "target": "Modbus Poll",
+    "repo": "https://github.com/kostyk348/mbrs",
+    "category": "limited",
+    "stage": "implementation",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/kostyk348/mbrs/blob/main/docs/COMPARISON.md",
+      "https://github.com/kostyk348/mbrs/blob/main/docs/COLOR-ENGINE-RE.md"
+    ],
+    "summary": {
+      "en": "A Rust Modbus master and monitor with conditional colors, charts and a SCADA-style dashboard.",
+      "zh-CN": "Rust Modbus 主站与监控工具，包含条件着色、曲线和 SCADA 风格面板。"
+    },
+    "rea": {
+      "en": "REA opened the target, but subsequent MCP queries failed schema validation; the author documented a local interface fix.",
+      "zh-CN": "REA 成功打开目标，但后续 MCP 查询因输出结构验证失败；作者记录了本地接口修复。"
+    },
+    "limitations": {
+      "en": "The color-engine analysis used Capstone independently of REA; TLS, printing and some integrations remain unfinished.",
+      "zh-CN": "颜色引擎分析使用独立于 REA 的 Capstone；TLS、打印及部分集成尚未完成。"
+    },
+    "created_at": "2026-10-07T19:33:38Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "wow-mobile-ios",
+    "name": "wow-mobile-ios",
+    "target": "World of Warcraft",
+    "repo": "https://github.com/wubing733-prog/wow-mobile-ios",
+    "category": "limited",
+    "stage": "prototype",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/wubing733-prog/wow-mobile-ios/blob/main/docs/REA-FINDINGS.md",
+      "https://github.com/wubing733-prog/wow-mobile-ios/blob/main/docs/PROGRESS.md"
+    ],
+    "summary": {
+      "en": "A Godot single-player scene prototype with data-extraction tools.",
+      "zh-CN": "Godot 单机场景原型，并公开数据提取工具。"
+    },
+    "rea": {
+      "en": "REA identified the binary, but native analysis timed out and the project moved to direct Ghidra analysis.",
+      "zh-CN": "REA 完成二进制身份识别，但原生分析超时，项目随后改用直接 Ghidra 分析。"
+    },
+    "limitations": {
+      "en": "Neither a full WoW client nor evidence that REA recovered the game's logic; original game resources are separate.",
+      "zh-CN": "不是完整魔兽客户端，也不能证明 REA 恢复了游戏逻辑；原版游戏资源另计。"
+    },
+    "created_at": "2026-10-11T18:56:34Z",
+    "reviewed_at": "2026-10-13"
+  }
+]

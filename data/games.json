@@ -1,0 +1,271 @@
+[
+  {
+    "id": "desktop-games-nostalgia",
+    "name": "Desktop Games Nostalgia",
+    "target": "Desktop Games / Stress Reducers",
+    "repo": "https://github.com/ucodia/desktop-games-nostalgia",
+    "category": "games",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/ucodia/desktop-games-nostalgia/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "Swift and JavaScript ports of the desktop-smashing toy, with all nine tools.",
+      "zh-CN": "将桌面破坏小游戏移植到 Swift macOS 应用和 JavaScript 网页，包含九种工具。"
+    },
+    "rea": {
+      "en": "REA with Ghidra decompiled the Peter interpreter to recover image decoding, asset layouts, timer ticks, sprite behavior and sound handling.",
+      "zh-CN": "使用 REA 和 Ghidra 反编译 Peter 解释器，研究图像解码、资源布局、计时、精灵行为和声音处理。"
+    },
+    "limitations": {
+      "en": "The repository includes extracted original assets without a project-wide license, and true-color rendering and sprite shadows differ from the original.",
+      "zh-CN": "仓库包含提取的原版资源且未提供项目整体许可证，真彩色渲染和精灵阴影与原版存在差异。"
+    },
+    "created_at": "2026-10-09T21:12:39Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "card-games-to-go-revived",
+    "name": "Card Games To Go, revived",
+    "target": "Solitaire and Card Games To Go (Pocket PC)",
+    "repo": "https://github.com/Ozdotdotdot/card-games-to-go-revived",
+    "category": "games",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/Ozdotdotdot/card-games-to-go-revived/blob/main/FINDINGS.md",
+      "https://github.com/Ozdotdotdot/card-games-to-go-revived/commit/03781c7af52c6e7033c1a154c849077ecb57863d"
+    ],
+    "summary": {
+      "en": "Rebuilds six Pocket PC card games for browsers and Klondike as a native C/SDL2 application.",
+      "zh-CN": "将六款 Pocket PC 纸牌游戏重建为网页版，并提供 C/SDL2 原生 Klondike。"
+    },
+    "rea": {
+      "en": "REA 6.4.0 and Ghidra analyzed the Windows CE ARM executables to recover rules, rendering details and Hearts/Spades opponent logic.",
+      "zh-CN": "使用 REA 6.4.0 和 Ghidra 分析 Windows CE ARM 程序，研究规则、绘制细节及红心大战和黑桃的对手逻辑。"
+    },
+    "limitations": {
+      "en": "The repository includes original resources and binaries whose third-party ownership is separate from the reconstructed implementation.",
+      "zh-CN": "仓库包含原版资源和二进制，其第三方权属与重建实现需分别看待。"
+    },
+    "created_at": "2026-10-12T21:33:22Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "rustfighter",
+    "name": "Rustfighter",
+    "target": "Street Fighter II (MS-DOS)",
+    "repo": "https://github.com/Mynd-labs/rustfighter",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/Mynd-labs/rustfighter/blob/main/docs/README.md",
+      "https://github.com/Mynd-labs/rustfighter/commit/113ec1f0b078b403c6f9632d898febdb90d21a51"
+    ],
+    "summary": {
+      "en": "A native Rust reconstruction with resource decoders, an asset viewer and a playable fight implementation.",
+      "zh-CN": "原生 Rust 重建项目，提供资源解码器、资源浏览器和可玩的对战实现。"
+    },
+    "rea": {
+      "en": "REA 6.4.0 with Ghidra 12.1.4 analyzed SF2.EXE, with documented function addresses, resource layouts and validation results.",
+      "zh-CN": "使用 REA 6.4.0 和 Ghidra 12.1.4 分析 SF2.EXE，公开函数地址、资源格式及验证记录。"
+    },
+    "limitations": {
+      "en": "Original game data is required, and resource validation and playable fights do not establish complete gameplay equivalence.",
+      "zh-CN": "需要自备原版数据，资源验证和可玩对战尚不足以证明完整玩法与原版等价。"
+    },
+    "created_at": "2026-10-13T05:12:00Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "re-twist-tt2",
+    "name": "re-twist-tt2",
+    "target": "Text Twist 2",
+    "repo": "https://github.com/jcchikikomori/re-twist-tt2",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/jcchikikomori/re-twist-tt2/commit/958c00ec7028bc2a9941f791a6a12263ca4efcf0",
+      "https://github.com/jcchikikomori/re-twist-tt2/blob/main/docs/reverse-engineering/binary-fingerprint.md"
+    ],
+    "summary": {
+      "en": "A C++17 reconstruction with dictionary codecs, game rules and an SDL2 interface supporting timed and untimed play.",
+      "zh-CN": "C++17 重建项目，包含词典编解码、游戏规则和支持计时及不限时玩法的 SDL2 界面。"
+    },
+    "rea": {
+      "en": "An explicit commit records REA/Ghidra 12.1.4 analysis of the installed executable to reconstruct crossword grid generation, randomization and scoring.",
+      "zh-CN": "提交记录明确说明通过 REA/Ghidra 12.1.4 分析安装版程序，重建填字棋盘生成、随机化和计分逻辑。"
+    },
+    "limitations": {
+      "en": "Crossword engine code exists, but Crossword, Lightning and Word of the Day remain menu stubs and original-save importing is unfinished.",
+      "zh-CN": "填字引擎已有代码，但填字、闪电和每日一词的菜单入口仍未接通，原版存档导入也未完成。"
+    },
+    "created_at": "2026-10-11T04:06:18Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "spelljammer-reboot",
+    "name": "Spelljammer 1992 Reboot",
+    "target": "Spelljammer: Pirates of Realmspace",
+    "repo": "https://github.com/rexsaurus/spelljammer-reboot",
+    "category": "games",
+    "stage": "prototype",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/rexsaurus/spelljammer-reboot/blob/main/docs/engine-map.md",
+      "https://github.com/rexsaurus/spelljammer-reboot/blob/main/docs/port-plan.md"
+    ],
+    "summary": {
+      "en": "Python asset decoders and a Three.js browser prototype covering ports, trading, flight and parts of space combat.",
+      "zh-CN": "公开 Python 资源解码器和 Three.js 网页原型，覆盖港口、贸易、飞行及部分太空战斗。"
+    },
+    "rea": {
+      "en": "REA 6.4.0 and headless Ghidra 12.1.4 were used to map the DOS executables, function roles and asset-loading paths.",
+      "zh-CN": "使用 REA 6.4.0 和无界面 Ghidra 12.1.4 研究 DOS 程序结构、函数职责和资源加载路径。"
+    },
+    "limitations": {
+      "en": "The prototype requires original game data, with boarding combat, quests and character creation unfinished and several rules approximate.",
+      "zh-CN": "原型需要原版数据，登船战斗、任务和角色创建尚未完成，部分规则仍采用近似实现。"
+    },
+    "created_at": "2026-10-12T16:24:36Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "lezac-decompilation",
+    "name": "Lezac decompilation",
+    "target": "Larax & Zaco v1.0 shareware",
+    "repo": "https://github.com/Hubert-Rybak/lezac-decompilation",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/Hubert-Rybak/lezac-decompilation/blob/main/README.md",
+      "https://github.com/Hubert-Rybak/lezac-decompilation/blob/main/docs/pascal-recovery.md"
+    ],
+    "summary": {
+      "en": "Reconstructs seven Pascal routines, six C routines and sixteen packed layouts, with original-code differential tests.",
+      "zh-CN": "重建七个 Pascal 例程、六个 C 例程和十六种紧凑数据布局，并提供与原始代码的差分测试。"
+    },
+    "rea": {
+      "en": "REA 6.3.0 with Ghidra 12.1.4 exported 215 procedure dossiers with retained evidence IDs, pseudocode, assembly and provenance.",
+      "zh-CN": "使用 REA 6.3.0 和 Ghidra 12.1.4 导出 215 个函数档案，保留证据编号、伪代码、汇编及来源信息。"
+    },
+    "limitations": {
+      "en": "This is a verified subset rather than a playable game or byte-identical rebuild, and original executable and resource files are excluded.",
+      "zh-CN": "成果是经过验证的局部代码，尚非可玩游戏或字节一致的重建，仓库不包含原程序和资源文件。"
+    },
+    "created_at": "2026-10-10T22:56:35Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "ultrasunnymoon",
+    "name": "UltraSunnyMoon",
+    "target": "Pokémon Ultra Sun (Nintendo 3DS)",
+    "repo": "https://github.com/tylergraydev/UltraSunnyMoon",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/tylergraydev/UltraSunnyMoon/blob/main/docs/FIRST_SOURCE.md",
+      "https://github.com/tylergraydev/UltraSunnyMoon/blob/main/docs/FULL_ANALYSIS.md"
+    ],
+    "summary": {
+      "en": "Publishes two behavior-tested C runtime replacements and a hybrid rebuild that reaches controllable bedroom gameplay.",
+      "zh-CN": "公开两个经过行为测试的 C 运行时替代函数，混合重建版本已进入可控制角色移动的卧室场景。"
+    },
+    "rea": {
+      "en": "Pinned REA and Ghidra analysis produced retained evidence for the main executable and the reconstructed runtime helper.",
+      "zh-CN": "使用固定版本的 REA 和 Ghidra 分析主程序及运行时辅助函数，并保留可追溯的证据记录。"
+    },
+    "limitations": {
+      "en": "The two replacements are nonmatching, most image bytes remain original, and complete-game compatibility is unverified.",
+      "zh-CN": "两个替代函数尚未达到字节匹配，大部分映像仍保留原始字节，完整游戏兼容性未经验证。"
+    },
+    "created_at": "2026-10-12T14:02:50Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "opensgolf",
+    "name": "OpenSGolf",
+    "target": "Sid Meier's SimGolf",
+    "repo": "https://github.com/crspytopgn/opensgolf",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/crspytopgn/opensgolf/blob/main/docs/REVERSE_ENGINEERING.md",
+      "https://github.com/crspytopgn/opensgolf/commit/af326772965918c2e41b0f2cae9898047e5584ee"
+    ],
+    "summary": {
+      "en": "A Rust game-engine reimplementation for desktop, Android and browsers, with asset decoders and reconstructed simulation rules.",
+      "zh-CN": "面向桌面、Android 和浏览器的 Rust 游戏引擎重实现，包含资源解码器和重建的模拟规则。"
+    },
+    "rea": {
+      "en": "The October 12 update documents REA 6.4.0/Ghidra analysis of golf.exe, Terrain.dll and jgl.dll and adds a reusable query script.",
+      "zh-CN": "10 月 12 日更新记录了 REA 6.4.0/Ghidra 对 golf.exe、Terrain.dll 和 jgl.dll 的分析，并加入可复用查询脚本。"
+    },
+    "limitations": {
+      "en": "The project predates the review week, fidelity gaps remain, and players use their own original assets or the replacement graphics set.",
+      "zh-CN": "项目创建早于本次统计周，仍存在还原差异，玩家需使用自备原版资源或替代图形包。"
+    },
+    "created_at": "2026-10-02T12:36:25Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "wc3ctl",
+    "name": "wc3ctl",
+    "target": "Warcraft III World Editor",
+    "repo": "https://github.com/GodMephisto/wc3ctl",
+    "category": "limited",
+    "stage": "compatibility",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/GodMephisto/wc3ctl/commit/606b041843781e978b5b65f072df91b5f4b31f2b",
+      "https://github.com/GodMephisto/wc3ctl/blob/master/README.md"
+    ],
+    "summary": {
+      "en": "A Warcraft III map toolkit with a desktop editor, C# CLI and MCP interface.",
+      "zh-CN": "Warcraft III 地图工具集，提供桌面编辑器、C# 命令行和 MCP 接口。"
+    },
+    "rea": {
+      "en": "An October 12 commit records REA/Ghidra confirmation of UnitEditorData.txt in World Editor 1.28.5 while adding enum schemas and query commands.",
+      "zh-CN": "10 月 12 日提交记录通过 REA/Ghidra 确认 World Editor 1.28.5 中的 UnitEditorData.txt 引用，并加入枚举结构与查询命令。"
+    },
+    "limitations": {
+      "en": "REA's documented role is a narrow configuration-source check within an existing toolkit that also uses open-source libraries.",
+      "zh-CN": "已记录的 REA 作用限于核对配置来源，工具集此前已存在并使用其他开源库。"
+    },
+    "created_at": "2026-10-03T05:14:51Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "unbattletech",
+    "name": "UnBattletech",
+    "target": "BattleTech: The Crescent Hawk's Inception",
+    "repo": "https://github.com/velteyn/UnBattletech",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/velteyn/UnBattletech/commit/ae5363f2c5d0d3710278bf29d6f21b190e2538de",
+      "https://github.com/velteyn/UnBattletech/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "Reverse-engineering documentation, Python tools and an unfinished Godot/C# recreation of the DOS game.",
+      "zh-CN": "公开 DOS 游戏的逆向文档、Python 工具和仍在开发的 Godot/C# 重建实现。"
+    },
+    "rea": {
+      "en": "The October 13 update records nine REA/Ghidra queries that cross-checked menu, combat-display and sound-command functions against earlier analysis.",
+      "zh-CN": "10 月 13 日更新记录九次 REA/Ghidra 查询，对此前的菜单、战斗显示及声音命令分析进行交叉核对。"
+    },
+    "limitations": {
+      "en": "The project began in 2025, this REA update mainly corrects research notes, and the recreation lacks end-to-end equivalence testing.",
+      "zh-CN": "项目始于 2025 年，本次 REA 更新主要修正文档，重建实现尚未完成与原版的端到端等价验证。"
+    },
+    "created_at": "2025-12-23T17:48:38Z",
+    "reviewed_at": "2026-10-13"
+  }
+]

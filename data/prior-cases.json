@@ -1,0 +1,854 @@
+[
+  {
+    "id": "vd-streamer-linux",
+    "name": "Virtual Desktop Streamer for Linux",
+    "target": "Virtual Desktop Streamer",
+    "repo": "https://github.com/cudanexus/vd-streamer-linux",
+    "category": "desktop",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/cudanexus/vd-streamer-linux"
+    ],
+    "summary": {
+      "en": "Linux desktop, audio and input streaming through protocol libraries extracted from the official macOS streamer.",
+      "zh-CN": "利用官方 macOS 串流器中的协议库，在 Linux 实现桌面、音频和输入串流。"
+    },
+    "rea": {
+      "en": "The README records REA installer analysis and managed-member inspection used to design the Linux host and frame pacing.",
+      "zh-CN": "README 记录了 REA 安装包分析和托管成员检查，用于 Linux 宿主适配与帧发送节流。"
+    },
+    "limitations": {
+      "en": "Requires vendor libraries and a headset app; SteamVR and OpenXR games are unsupported. The documented checks used a simulated headset.",
+      "zh-CN": "需要原厂库与头显客户端；不支持 SteamVR 和 OpenXR 游戏，已记录检查使用模拟头显。"
+    },
+    "created_at": "2026-10-12T21:00:17Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "wh3-save-editor",
+    "name": "WH3SaveEditor",
+    "target": "Total War: WARHAMMER III",
+    "repo": "https://github.com/davehornik/WH3SaveEditor",
+    "category": "games",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/davehornik/WH3SaveEditor"
+    ],
+    "summary": {
+      "en": "Python and PySide6 save editor with campaign editing and multiplayer-to-single-player conversion.",
+      "zh-CN": "使用 Python 和 PySide6 实现战役存档编辑及多人存档转单人。"
+    },
+    "rea": {
+      "en": "The author identifies REA with Ghidra as the source of serializer, player-state and unit-mirror findings.",
+      "zh-CN": "作者明确记录通过 REA 与 Ghidra 取得序列化、玩家状态和单位镜像结构的分析结果。"
+    },
+    "limitations": {
+      "en": "This is a save-format tool with a restrictive source-available license, not a reconstruction of the game.",
+      "zh-CN": "这是存档格式工具，源码采用限制性许可，并非游戏重建。"
+    },
+    "created_at": "2026-07-19T23:27:24Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "dx-ball",
+    "name": "DX-Ball reconstruction",
+    "target": "DX-Ball 1.07",
+    "repo": "https://github.com/N0zoM1z0/dx-ball",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/N0zoM1z0/dx-ball",
+      "https://github.com/N0zoM1z0/dx-ball/blob/main/docs/REA.md"
+    ],
+    "summary": {
+      "en": "C and C++ reconstruction with recovered functions, original-executable comparisons and compiler matching.",
+      "zh-CN": "以 C 和 C++ 重建函数，提供原程序对照与编译产物匹配。"
+    },
+    "rea": {
+      "en": "REA supplies Ghidra pseudocode, instructions, calls and references, with saved responses tied to implementation decisions.",
+      "zh-CN": "通过 REA 获取 Ghidra 伪代码、指令、调用和引用，并保存与实现决策对应的分析记录。"
+    },
+    "limitations": {
+      "en": "Per-function matches and selected runtime checks do not establish complete game equivalence.",
+      "zh-CN": "单函数匹配和选定运行检查不等于整款游戏完全等价。"
+    },
+    "created_at": "2026-10-07T04:55:12Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "th04",
+    "name": "TH04 reconstruction",
+    "target": "Touhou 4: Lotus Land Story",
+    "repo": "https://github.com/N0zoM1z0/th04",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://rea.tools/showcase/th04/",
+      "https://github.com/N0zoM1z0/th04"
+    ],
+    "summary": {
+      "en": "PC-98 DOS reconstruction with maintained source for four executables and recorded original-versus-rebuilt comparisons.",
+      "zh-CN": "重建 PC-98 DOS 版本，公开四个程序的维护源码及原版对照记录。"
+    },
+    "rea": {
+      "en": "The REA showcase checks original ring-bullet instructions against maintained reconstructed source and existing compiler comparisons.",
+      "zh-CN": "REA 案例将原程序环状弹幕指令与维护中的重建源码及已有编译器对照相互核验。"
+    },
+    "limitations": {
+      "en": "Bounded demo and function checks should not be read as universal binary or gameplay equivalence.",
+      "zh-CN": "有限演示与函数检查不能推广为所有二进制和玩法完全等价。"
+    },
+    "created_at": "2026-09-06T09:55:30Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "ski-or-die",
+    "name": "Snowball War reconstruction",
+    "target": "Ski or Die: Snowball War",
+    "repo": "https://github.com/tuunanet/rea-ski-or-die-reconstruction",
+    "category": "games",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/tuunanet/rea-ski-or-die-reconstruction",
+      "https://github.com/tuunanet/rea-ski-or-die-reconstruction/blob/main/docs/reverse-engineering-notes.md"
+    ],
+    "summary": {
+      "en": "Playable Rust and SDL2 reconstruction of the Snowball War minigame with an asset extractor.",
+      "zh-CN": "使用 Rust 和 SDL2 重建可玩的雪球大战小游戏，并提供资源提取器。"
+    },
+    "rea": {
+      "en": "The author records REA CLI load-image checks, caller-declared function seeds, traces and function queries.",
+      "zh-CN": "作者记录了 REA CLI 装载映像检查、人工声明函数种子、调用追踪与函数查询。"
+    },
+    "limitations": {
+      "en": "Only one minigame is rebuilt, timing and randomness are approximations, and runtime parity was not checked in DOSBox.",
+      "zh-CN": "仅重建一个小游戏，时序与随机算法有近似处理，且未通过 DOSBox 核对运行等价性。"
+    },
+    "created_at": "2026-10-11T12:32:55Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "zee-rp",
+    "name": "zee-rp",
+    "target": "Axure RP 11 native .rp format",
+    "repo": "https://github.com/LilZeeCN/zee-rp",
+    "category": "desktop",
+    "stage": "compatibility",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://x.com/LilZeeinthex/status/2109668579402829889",
+      "https://github.com/LilZeeCN/zee-rp"
+    ],
+    "summary": {
+      "en": "JavaScript codec, CLI and MCP tools for reading and editing supported native Axure prototypes.",
+      "zh-CN": "提供 JavaScript 编解码器、CLI 和 MCP 工具，读写受支持的 Axure 原生原型。"
+    },
+    "rea": {
+      "en": "The project author explicitly states in a public post that REA assisted the Axure reverse-engineering work.",
+      "zh-CN": "项目作者在公开原帖明确表示使用 REA 辅助 Axure 逆向。"
+    },
+    "limitations": {
+      "en": "Support is limited to documented document structures and tested Axure builds; public REA call records were not found.",
+      "zh-CN": "支持范围限于已记录的文档结构与测试版本，未找到公开的 REA 调用记录。"
+    },
+    "created_at": "2026-10-12T14:42:54Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "baocut-slides",
+    "name": "BaoCut Slides integration",
+    "target": "Claude Slides editor frontend",
+    "repo": "https://github.com/JimLiu/baocut",
+    "category": "media",
+    "stage": "partial",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://weibo.com/2/detail/5352823472785230",
+      "https://github.com/JimLiu/baocut/commit/b8585e0c8d7a82bdee9f0ed019cf6edb075e41c1"
+    ],
+    "summary": {
+      "en": "Integrates a slide-editing workflow into the BaoCut video agent, with the implementation committed publicly.",
+      "zh-CN": "将幻灯片编辑流程接入 BaoCut 视频 Agent，并公开对应实现提交。"
+    },
+    "rea": {
+      "en": "The author describes using Codex with REA for initial frontend recovery before restructuring it with Claude Code.",
+      "zh-CN": "作者说明先用 Codex 与 REA 初步还原前端，再用 Claude Code 重写结构。"
+    },
+    "limitations": {
+      "en": "This is a feature integration, and the author describes recreating prompt behavior rather than recovering hidden system prompts.",
+      "zh-CN": "这是局部功能集成，作者描述的是模仿提示词效果，而非恢复隐藏系统提示词。"
+    },
+    "created_at": "2026-07-13T07:06:42Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "reacut",
+    "name": "ReaCut",
+    "target": "CapCut / Jianying",
+    "repo": "https://github.com/Xiangyu-CAS/rea-capcut",
+    "category": "media",
+    "stage": "prototype",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/Xiangyu-CAS/rea-capcut",
+      "https://github.com/Xiangyu-CAS/rea-capcut/blob/main/docs/research/REA_FINDINGS.md"
+    ],
+    "summary": {
+      "en": "Electron, React and FFmpeg video editor implementing a timeline, preview and export workflow.",
+      "zh-CN": "基于 Electron、React 和 FFmpeg 实现时间线、预览及导出的视频编辑器。"
+    },
+    "rea": {
+      "en": "Published evidence IDs cover REA artifact inventory and native-window observations used alongside local draft research.",
+      "zh-CN": "公开证据编号涵盖 REA 包清单与原生窗口观察，并结合本地草稿研究。"
+    },
+    "limitations": {
+      "en": "The project is an early independent implementation, with incomplete draft compatibility and no recovered CapCut editing engine.",
+      "zh-CN": "项目仍处早期独立实现阶段，草稿互通不完整，也未恢复 CapCut 编辑引擎。"
+    },
+    "created_at": "2026-10-13T10:58:41Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "ledger-reborn",
+    "name": "Ledger Reborn",
+    "target": "QuickBooks Desktop for Mac 2024 Trial",
+    "repo": "https://github.com/lxistired/ledger-reborn",
+    "category": "desktop",
+    "stage": "prototype",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/lxistired/ledger-reborn",
+      "https://github.com/lxistired/ledger-reborn/blob/main/docs/CASE_STUDY.md"
+    ],
+    "summary": {
+      "en": "Independent Python and SQLite accounting application with journals, invoices, inventory and financial reports.",
+      "zh-CN": "使用 Python 和 SQLite 独立实现分录、发票、库存及财务报表。"
+    },
+    "rea": {
+      "en": "The case study records REA with Ghidra for selected accounting functions, NIB decoding and native UI observations.",
+      "zh-CN": "案例文档记录 REA 与 Ghidra 的局部会计函数分析、NIB 解码及原生界面观察。"
+    },
+    "limitations": {
+      "en": "It is a preview with bounded sample comparisons and does not reproduce every QuickBooks feature or financial workflow.",
+      "zh-CN": "目前是预览版，样本对照范围有限，未复现全部 QuickBooks 功能或财务流程。"
+    },
+    "created_at": "2026-10-12T12:38:42Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "wispr-flow-teardown",
+    "name": "Wispr Flow teardown and minimal app",
+    "target": "Wispr Flow",
+    "repo": "https://github.com/az9713/wispr-flow-rea-teardown",
+    "category": "desktop",
+    "stage": "prototype",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/az9713/wispr-flow-rea-teardown"
+    ],
+    "summary": {
+      "en": "Publishes a static teardown and a small local implementation of the record, transcribe and paste workflow.",
+      "zh-CN": "公开静态拆解报告及录音、转写、粘贴流程的精简本地实现。"
+    },
+    "rea": {
+      "en": "The project documents REA-assisted application analysis and separates observed facts, inferences and unknowns.",
+      "zh-CN": "项目记录 REA 辅助应用分析，并区分已观察事实、推断与未知。"
+    },
+    "limitations": {
+      "en": "The minimal app reproduces a narrow workflow rather than the complete product or its cloud service.",
+      "zh-CN": "精简应用只复现一条工作流程，并未恢复完整产品及其云服务。"
+    },
+    "created_at": "2026-10-11T17:48:45Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "driveindex",
+    "name": "Driveindex model",
+    "target": "driveindex.com valuation frontend",
+    "repo": "https://github.com/InshaKhan6593/Driveindex",
+    "category": "web",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/InshaKhan6593/Driveindex/blob/ccr-7555e2da-f1g8vb/README.md",
+      "https://github.com/InshaKhan6593/Driveindex/blob/ccr-7555e2da-f1g8vb/docs/REVERSE_ENGINEERING_REPORT.md"
+    ],
+    "summary": {
+      "en": "Python ports of client-side car-valuation math plus independently fitted server-side estimators.",
+      "zh-CN": "使用 Python 移植客户端汽车估值计算，并独立拟合服务端估计模型。"
+    },
+    "rea": {
+      "en": "The source includes a REA capture script and a report linking captured pages to recovered calculations.",
+      "zh-CN": "源码包含 REA 抓取脚本及将页面证据关联到计算逻辑的报告。"
+    },
+    "limitations": {
+      "en": "Client-side formulas and inferred server estimates have different evidence strength, and the commercial backend was not recovered.",
+      "zh-CN": "客户端公式与推测的服务端估计器证据强度不同，商业后端并未恢复。"
+    },
+    "created_at": "2026-10-11T22:04:02Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "vitals-clone",
+    "name": "VitalsClone",
+    "target": "Vitals by Fore Studio (vitalsmac.com)",
+    "repo": "https://github.com/Samin12/vitals-clone",
+    "category": "desktop",
+    "stage": "prototype",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/Samin12/vitals-clone"
+    ],
+    "summary": {
+      "en": "SwiftUI menu-bar monitor for processes, resource use, development servers and wake locks.",
+      "zh-CN": "使用 SwiftUI 实现进程、资源占用、开发服务及阻止休眠状态的菜单栏监视器。"
+    },
+    "rea": {
+      "en": "The README attributes the reconstruction to static analysis of the shipped Vitals app using REA.",
+      "zh-CN": "README 明确将重建归因于使用 REA 对 Vitals 发行版进行静态分析。"
+    },
+    "limitations": {
+      "en": "No detailed public REA call log or full parity validation is linked, and the stated build requires recent macOS tooling.",
+      "zh-CN": "未提供详细公开 REA 调用日志或完整等价性验证，所述构建依赖较新的 macOS 工具链。"
+    },
+    "created_at": "2026-10-07T16:30:45Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "lino",
+    "name": "open-typora (formerly Lino)",
+    "target": "Typora",
+    "repo": "https://github.com/yruichen/lino",
+    "category": "desktop",
+    "stage": "prototype",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/yruichen/open-typora"
+    ],
+    "summary": {
+      "en": "Early Markdown editor with a native Mac shell, local files and a shared Rust core.",
+      "zh-CN": "早期 Markdown 编辑器，采用原生 Mac 外壳、本地文件与共享 Rust 核心。"
+    },
+    "rea": {
+      "en": "The author credits REA application-analysis tools and workflows, without publishing detailed analysis calls.",
+      "zh-CN": "作者致谢 REA 应用分析工具与工作流，但未公开详细分析调用。"
+    },
+    "limitations": {
+      "en": "Images, math, diagrams, advanced export and broader platform validation remain incomplete.",
+      "zh-CN": "图片、公式、图表、高级导出和更广泛的平台验证仍未完成。"
+    },
+    "created_at": "2026-10-12T13:59:26Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "cupcut",
+    "name": "CupCut",
+    "target": "CapCut Desktop 9.4",
+    "repo": "https://github.com/aglcode/cupcut_reverse_engineering",
+    "category": "media",
+    "stage": "prototype",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/aglcode/cupcut_reverse_engineering"
+    ],
+    "summary": {
+      "en": "Browser video editor with CapCut-inspired draft import, timeline operations and WebCodecs export.",
+      "zh-CN": "浏览器视频编辑器，实现参考 CapCut 的草稿导入、时间线操作和 WebCodecs 导出。"
+    },
+    "rea": {
+      "en": "The author's GitHub repository description identifies the project as a REA test for CapCut Desktop.",
+      "zh-CN": "作者在 GitHub 仓库简介中明确将项目标为 CapCut Desktop 的 REA 测试。"
+    },
+    "limitations": {
+      "en": "Public call logs were not found, and many visual effects, units and timing rules are independent approximations.",
+      "zh-CN": "未找到公开调用日志，许多视觉效果、参数单位和时序规则属于独立近似实现。"
+    },
+    "created_at": "2026-10-13T06:25:47Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "dji-reframe-linux",
+    "name": "DJI Reframe for Linux",
+    "target": "DJI Reframe OFX plugin",
+    "repo": "https://github.com/dhomoney/dji-reframe-linux",
+    "category": "media",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/dhomoney/dji-reframe-linux"
+    ],
+    "summary": {
+      "en": "Linux OFX implementation for reframing DJI 360-degree footage in DaVinci Resolve.",
+      "zh-CN": "在 Linux 实现 OFX 插件，用于在 DaVinci Resolve 重构 DJI 全景素材视角。"
+    },
+    "rea": {
+      "en": "The README identifies REA and Ghidra analysis of render, parameter-change and resolution routines with function addresses.",
+      "zh-CN": "README 列出 REA 与 Ghidra 对渲染、参数变更和分辨率函数的分析及地址。"
+    },
+    "limitations": {
+      "en": "The documented implementation uses CPU rendering, while GPU acceleration and broader host compatibility need further work.",
+      "zh-CN": "已记录实现采用 CPU 渲染，GPU 加速及更广泛宿主兼容性仍需完善。"
+    },
+    "created_at": "2026-10-13T13:19:55Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "tvs-ride-companion",
+    "name": "TVSRideCompanion",
+    "target": "TVS Connect Android app and instrument-cluster protocol",
+    "repo": "https://github.com/athulkrishna2015/TVSRideCompanion",
+    "category": "devices",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/athulkrishna2015/TVSRideCompanion",
+      "https://github.com/athulkrishna2015/TVSRideCompanion/blob/master/research/SOURCES.md"
+    ],
+    "summary": {
+      "en": "Android companion implementing BLE connections and supported TVS instrument-cluster messages.",
+      "zh-CN": "Android 配套应用，实现 BLE 连接及受支持的 TVS 仪表消息。"
+    },
+    "rea": {
+      "en": "The source ledger lists successful REA and JADX method queries against a reduced APK, including text and checksum routines.",
+      "zh-CN": "来源台账列出对精简 APK 成功执行的 REA 与 JADX 方法查询，包括文本和校验和函数。"
+    },
+    "limitations": {
+      "en": "Hardware checks cover selected clusters, and unresolved name-message values and other model-specific functions remain unsupported.",
+      "zh-CN": "硬件检查仅覆盖部分仪表，尚未解决的名称消息编号及其他车型功能仍不支持。"
+    },
+    "created_at": "2026-10-11T17:15:11Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "minesweeper-linux",
+    "name": "Minesweeper Linux recomp",
+    "target": "Windows XP WINMINE.EXE",
+    "repo": "https://github.com/NexonSU/minesweeper-linux-recomp",
+    "category": "games",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/NexonSU/minesweeper-linux-recomp"
+    ],
+    "summary": {
+      "en": "C11 and SDL2 Linux implementation of classic Windows Minesweeper using recovered behavior and assets.",
+      "zh-CN": "使用 C11 和 SDL2 在 Linux 实现经典 Windows 扫雷，参考恢复的行为与资源。"
+    },
+    "rea": {
+      "en": "The README records REA MCP with Ghidra analysis of WINMINE functions and the original board data model.",
+      "zh-CN": "README 记录通过 REA MCP 与 Ghidra 分析 WINMINE 函数及原棋盘数据结构。"
+    },
+    "limitations": {
+      "en": "The Linux implementation is an independent port, and use of original game assets does not establish complete binary equivalence.",
+      "zh-CN": "Linux 版本属于独立移植，使用原游戏资源不代表二进制完全等价。"
+    },
+    "created_at": "2026-10-11T11:51:29Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "gifpack",
+    "name": "GifPack",
+    "target": "iledcolor LED-backpack companion app",
+    "repo": "https://github.com/PeterkoCZ91/iledcolor-backpack",
+    "category": "devices",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/PeterkoCZ91/iledcolor-backpack"
+    ],
+    "summary": {
+      "en": "Android GIF library and BLE controller for compatible LED backpacks.",
+      "zh-CN": "面向兼容 LED 背包的 Android GIF 素材库与 BLE 控制器。"
+    },
+    "rea": {
+      "en": "The author records REA, Blutter and Ghidra analysis of the vendor Flutter app to recover the BLE protocol.",
+      "zh-CN": "作者记录使用 REA、Blutter 与 Ghidra 分析原厂 Flutter 应用以恢复 BLE 协议。"
+    },
+    "limitations": {
+      "en": "Real-device verification covers one 64-by-64 backpack and firmware version, with other panel features and limits unverified.",
+      "zh-CN": "实机验证仅覆盖一款 64×64 背包及其固件版本，其他面板功能和容量上限尚未验证。"
+    },
+    "created_at": "2026-10-06T20:01:15Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "v5vpn-client",
+    "name": "V5VPN REA client",
+    "target": "LeadSec V5VPN",
+    "repo": "https://github.com/hygkui/v5vpn-rea-client",
+    "category": "desktop",
+    "stage": "compatibility",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/hygkui/v5vpn-rea-client"
+    ],
+    "summary": {
+      "en": "Go and MyGo desktop client implementing password login and an HTTP CONNECT SSL-VPN path.",
+      "zh-CN": "使用 Go 和 MyGo 实现口令登录及 HTTP CONNECT 类型的 SSL VPN 客户端。"
+    },
+    "rea": {
+      "en": "The README explicitly attributes the independent client to REA-assisted analysis of V5VPN.",
+      "zh-CN": "README 明确将独立客户端归因于 REA 辅助分析 V5VPN。"
+    },
+    "limitations": {
+      "en": "It does not replace full network routing, certificate login or IPsec modes, and non-Windows builds lack runtime verification.",
+      "zh-CN": "不支持完整网络路由、证书登录或 IPsec 模式，非 Windows 构建尚无运行验证。"
+    },
+    "created_at": "2026-10-12T07:32:01Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "nival-bot",
+    "name": "Nival Bot",
+    "target": "Grok Bot 0.70.2",
+    "repo": "https://github.com/Snowbow19/nival-bot-rea",
+    "category": "desktop",
+    "stage": "prototype",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/Snowbow19/nival-bot-rea",
+      "https://github.com/Snowbow19/nival-bot-rea/blob/main/evidence/rea-summary.json"
+    ],
+    "summary": {
+      "en": "Preserves the shipped desktop interface and adds a local execution layer.",
+      "zh-CN": "保留发行版桌面界面，并增加本地执行层。"
+    },
+    "rea": {
+      "en": "The project records REA 6.4 artifact extraction, JavaScript and Electron analysis, and a hashed evidence summary.",
+      "zh-CN": "项目记录 REA 6.4 文件提取、JavaScript 与 Electron 分析及带散列的证据摘要。"
+    },
+    "limitations": {
+      "en": "Vendor cloud services were not recovered, and REA native-window observation was not completed.",
+      "zh-CN": "未恢复原厂云服务，REA 原生窗口观察也未完成。"
+    },
+    "created_at": "2026-10-13T05:39:14Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "lstarwars",
+    "name": "LEGO Star Wars reconstruction checkpoint",
+    "target": "LEGO Star Wars: The Complete Saga",
+    "repo": "https://github.com/nmdurkee/LStarwars-Decompile",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/nmdurkee/LStarwars-Decompile",
+      "https://github.com/nmdurkee/LStarwars-Decompile/blob/main/reverse-engineering/reconstructed/source-manifest.json"
+    ],
+    "summary": {
+      "en": "Portable C# fragments and verification tools reconstruct bounded gameplay, animation, geometry and navigation routines.",
+      "zh-CN": "使用可移植 C# 片段与验证工具重建有限的玩法、动画、几何及导航函数。"
+    },
+    "rea": {
+      "en": "The checkpoint credits REA as the initial analysis toolkit and links recovered-source mappings and retained evidence.",
+      "zh-CN": "检查点记录 REA 为初始分析工具，并提供恢复源码映射与保留证据。"
+    },
+    "limitations": {
+      "en": "It is neither a complete game nor a Unity or Quest adaptation, and later managed comparisons remain pending.",
+      "zh-CN": "并非完整游戏或 Unity、Quest 移植，后续部分托管代码对照仍待完成。"
+    },
+    "created_at": "2026-10-12T19:40:05Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "60fps-video",
+    "name": "60FPSVideo",
+    "target": "SVP 4 Mac",
+    "repo": "https://github.com/wasim-osman/60FPSVideo",
+    "category": "limited",
+    "stage": "implementation",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/wasim-osman/60FPSVideo",
+      "https://github.com/wasim-osman/60FPSVideo/blob/main/reports/FEASIBILITY-AND-STACK.md"
+    ],
+    "summary": {
+      "en": "Native Apple Silicon playback and conversion application using Apple's VideoToolbox frame interpolation.",
+      "zh-CN": "使用苹果 VideoToolbox 插帧能力实现 Apple Silicon 原生播放与转换应用。"
+    },
+    "rea": {
+      "en": "REA produced an SVP bundle inventory and application graph, while its Mach-O inspection failed without an analysis engine.",
+      "zh-CN": "REA 成功生成 SVP 包清单与应用图，但因缺少分析引擎未能完成 Mach-O 检查。"
+    },
+    "limitations": {
+      "en": "The implementation uses a separate Apple interpolation engine and should not be described as recovered SVP engine code.",
+      "zh-CN": "实现使用独立的苹果插帧引擎，不能描述为恢复了 SVP 引擎源码。"
+    },
+    "created_at": "2026-10-13T14:27:45Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "speakmore",
+    "name": "SpeakMore",
+    "target": "Typeless macOS client",
+    "repo": "https://github.com/zephyr4123/speakmore",
+    "category": "desktop",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/zephyr4123/speakmore",
+      "https://github.com/zephyr4123/speakmore/blob/main/targets/typeless/docs/90-evidence-ledger.md"
+    ],
+    "summary": {
+      "en": "macOS hotkey dictation tool that transcribes through the user's Gemini API and pastes the result.",
+      "zh-CN": "macOS 热键听写工具，通过用户自己的 Gemini API 转写并粘贴结果。"
+    },
+    "rea": {
+      "en": "The ledger provides REA JavaScript analysis, native-library inspection and network-capture evidence IDs for Typeless.",
+      "zh-CN": "证据台账提供针对 Typeless 的 REA JavaScript 分析、原生库检查及网络抓取证据编号。"
+    },
+    "limitations": {
+      "en": "It implements a narrower dictation workflow with a different service and does not reproduce every Typeless feature.",
+      "zh-CN": "仅实现较窄的听写流程并使用不同服务，未复现全部 Typeless 功能。"
+    },
+    "created_at": "2026-10-13T13:44:56Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "paper-rs",
+    "name": "paper-rs",
+    "target": "Paper desktop app",
+    "repo": "https://github.com/michaelshimeles/paper-rs",
+    "category": "desktop",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/michaelshimeles/paper-rs",
+      "https://github.com/michaelshimeles/paper-rs/blob/main/analysis/PAPER_ARCHITECTURE.md"
+    ],
+    "summary": {
+      "en": "Rust canvas-design application with drawing, layouts, import and export, and an MCP interface.",
+      "zh-CN": "Rust 画布设计应用，包含绘图、布局、导入导出及 MCP 接口。"
+    },
+    "rea": {
+      "en": "After a failed full-package run, the author completed a scoped REA JavaScript analysis of Paper's desktop shell.",
+      "zh-CN": "完整包分析失败后，作者成功完成了针对 Paper 桌面外壳的限定范围 REA JavaScript 分析。"
+    },
+    "limitations": {
+      "en": "Paper's remote editor engine was not analyzed, and the replacement uses its own geometric document model.",
+      "zh-CN": "未分析 Paper 的远程编辑引擎，替代应用采用自己的几何文档模型。"
+    },
+    "created_at": "2026-10-11T12:59:12Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "renotepad",
+    "name": "RENotepad",
+    "target": "Windows 10 Notepad 10.0.19041.5856",
+    "repo": "https://github.com/nikkoxgonzales/RENotepad",
+    "category": "desktop",
+    "stage": "implementation",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/nikkoxgonzales/RENotepad",
+      "https://github.com/nikkoxgonzales/RENotepad/blob/main/docs/WIN10-NOTEPAD-SPEC.md"
+    ],
+    "summary": {
+      "en": "Rust and Win32 text editor combining reconstructed classic Notepad behavior with a modern interface.",
+      "zh-CN": "Rust 与 Win32 文本编辑器，将重建的经典记事本行为与现代界面结合。"
+    },
+    "rea": {
+      "en": "The author documents Ghidra analysis through REA, a behavior specification and the script that drove the queries.",
+      "zh-CN": "作者记录通过 REA 使用 Ghidra，并提供行为规格及驱动查询的脚本。"
+    },
+    "limitations": {
+      "en": "It is an independent editor with its own interface and selected behavior coverage, not Microsoft's original source.",
+      "zh-CN": "这是具有自有界面和有限行为覆盖的独立编辑器，并非微软原始源码。"
+    },
+    "created_at": "2026-10-13T10:15:08Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "plainpad",
+    "name": "Plainpad",
+    "target": "Antinote 2.1.0",
+    "repo": "https://github.com/Stewy8506/Plainpad",
+    "category": "desktop",
+    "stage": "prototype",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/Stewy8506/Plainpad",
+      "https://github.com/Stewy8506/Plainpad/blob/main/.gsd/findings.md"
+    ],
+    "summary": {
+      "en": "Tauri and Rust scratchpad reconstruction with local storage and an Antinote-derived implementation specification.",
+      "zh-CN": "基于 Tauri 与 Rust 的便签重建项目，包含本地存储及参考 Antinote 制定的实现规格。"
+    },
+    "rea": {
+      "en": "The findings document REA inspect_macho, Ghidra configuration and analysis of Antinote's data models and interface structures.",
+      "zh-CN": "研究记录包含 REA inspect_macho、Ghidra 配置及 Antinote 数据模型和界面结构分析。"
+    },
+    "limitations": {
+      "en": "The roadmap still contains unfinished phases, so the specification's parity goals are not completed-feature evidence.",
+      "zh-CN": "路线图仍有未完成阶段，规格中的完全等价目标不能当作已交付功能证明。"
+    },
+    "created_at": "2026-10-04T15:35:59Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "vsl-dsp",
+    "name": "VSL-DSP",
+    "target": "PreSonus AudioBox VSL / Universal Control Android",
+    "repo": "https://github.com/grisuno/VSL-DSP",
+    "category": "devices",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/grisuno/VSL-DSP",
+      "https://github.com/grisuno/VSL-DSP/blob/main/spec/fatchannel_registry.md"
+    ],
+    "summary": {
+      "en": "Linux driver work, a C DSP-control library and CLI for AudioBox VSL devices.",
+      "zh-CN": "为 AudioBox VSL 设备提供 Linux 驱动研究、C 语言 DSP 控制库及 CLI。"
+    },
+    "rea": {
+      "en": "The author records LazyOwn-driven REA and Ghidra analysis of Universal Control Android for gain encoding, frequency mapping and transport.",
+      "zh-CN": "作者记录通过 LazyOwn 调用 REA 与 Ghidra 分析 Universal Control Android 的增益编码、频率映射和传输。"
+    },
+    "limitations": {
+      "en": "Some gain coefficients remain assumptions; tests cover pure transport helpers, and USB I/O still needs hardware validation.",
+      "zh-CN": "部分增益系数仍是假设；测试覆盖纯传输辅助函数，USB I/O 尚需实机验证。"
+    },
+    "created_at": "2025-10-25T18:18:13Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "maccabi-export",
+    "name": "Health Records Export for Maccabi",
+    "target": "Maccabi Online",
+    "repo": "https://github.com/RoniRachmani/health-records-export-for-maccabi",
+    "category": "limited",
+    "stage": "compatibility",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/RoniRachmani/health-records-export-for-maccabi"
+    ],
+    "summary": {
+      "en": "Chrome extension exporting a signed-in user's available health records and PDFs into a local archive.",
+      "zh-CN": "Chrome 扩展，将已登录用户可访问的健康记录与 PDF 导出为本地归档。"
+    },
+    "rea": {
+      "en": "REA contributed page routes, source-map checks and parser coverage; it found five service bases without paths, while the project’s own reader found the 193 concrete calls.",
+      "zh-CN": "REA 提供页面路由、source map 检查和解析覆盖分析，仅找到 5 个不含路径的服务基址；193 个具体调用由项目自有读取器发现。"
+    },
+    "limitations": {
+      "en": "It depends on the user's authorized session and current website behavior, and does not reconstruct Maccabi's backend.",
+      "zh-CN": "依赖用户授权会话及当前网站行为，并未重建 Maccabi 后端。"
+    },
+    "created_at": "2026-09-17T10:59:33Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "openbattlefield2",
+    "name": "OpenBattlefield2",
+    "target": "Battlefield 2 / Refractor 2",
+    "repo": "https://github.com/Moxnatiy/OpenBattlefield2",
+    "category": "games",
+    "stage": "partial",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/Moxnatiy/OpenBattlefield2",
+      "https://github.com/Moxnatiy/OpenBattlefield2/blob/master/docs/functions/hud-crosshair.md"
+    ],
+    "summary": {
+      "en": "C++20 engine reconstruction with original-asset loading, character rendering and selected server and HUD behavior.",
+      "zh-CN": "使用 C++20 重建引擎，包含原资源加载、角色渲染及部分服务器和 HUD 行为。"
+    },
+    "rea": {
+      "en": "Function notes tie crosshair and weapon-deviation behavior to original addresses and REA evidence IDs.",
+      "zh-CN": "函数笔记将准星与武器散布行为关联到原程序地址和 REA 证据编号。"
+    },
+    "limitations": {
+      "en": "Requires original assets and remains an incomplete engine reconstruction rather than full Battlefield 2 equivalence.",
+      "zh-CN": "需要原版资源，仍是不完整的引擎重建，并未达到完整 Battlefield 2 等价。"
+    },
+    "created_at": "2026-09-09T15:30:55Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "lotion",
+    "name": "Notion Linux Repack",
+    "target": "Notion Windows desktop client",
+    "repo": "https://github.com/TYBLHQY/lotion",
+    "category": "limited",
+    "stage": "compatibility",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/TYBLHQY/lotion"
+    ],
+    "summary": {
+      "en": "Build scripts adapt the official Notion Electron client, native dependency and tray behavior for Linux packaging.",
+      "zh-CN": "构建脚本适配官方 Notion Electron 客户端、原生依赖和托盘行为，并打包为 Linux 应用。"
+    },
+    "rea": {
+      "en": "REA package analysis reported integrity contradictions and unresolved custom IPC, retained as untrusted observations.",
+      "zh-CN": "REA 包分析报告完整性矛盾及未解析的自定义 IPC，并将结果保留为不可信观察。"
+    },
+    "limitations": {
+      "en": "This repackaging depends on vendor code and runtime checks rather than a recovered independent Notion implementation.",
+      "zh-CN": "这是依赖原厂代码与运行检查的重新打包，并非恢复出的独立 Notion 实现。"
+    },
+    "created_at": "2026-09-22T20:28:40Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "dota2-ai-replica",
+    "name": "Dota 2 AI Replica",
+    "target": "Dota 2",
+    "repo": "https://github.com/ArkIllus/dota2-ai-replica",
+    "category": "games",
+    "stage": "prototype",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/ArkIllus/dota2-ai-replica",
+      "https://github.com/ArkIllus/dota2-ai-replica/blob/main/docs/REFERENCES.md"
+    ],
+    "summary": {
+      "en": "Lua custom-game prototype implementing a test island, two heroes and simplified combat, items and courier behavior.",
+      "zh-CN": "Lua 自定义游戏原型，实现测试岛、两位英雄及简化战斗、物品和信使行为。"
+    },
+    "rea": {
+      "en": "The author reports earlier REA and Ghidra function analysis with bounded native-code comparisons, while those artifacts are not published here.",
+      "zh-CN": "作者记录此前使用 REA 与 Ghidra 分析局部函数并作有限原码对照，但相关产物未在本仓库公开。"
+    },
+    "limitations": {
+      "en": "Runs inside the original Dota 2 engine with its assets and is not a complete match or recovered Valve source.",
+      "zh-CN": "在原版 Dota 2 引擎及资源中运行，既非完整对局，也非恢复的 Valve 源码。"
+    },
+    "created_at": "2026-10-11T09:38:16Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "gunzrs",
+    "name": "GunZRs",
+    "target": "GunZ: The Duel",
+    "repo": "https://github.com/OpenRsG/GunZRs",
+    "category": "limited",
+    "stage": "implementation",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/OpenRsG/GunZRs",
+      "https://github.com/OpenRsG/GunZRs/blob/main/docs/formats.md"
+    ],
+    "summary": {
+      "en": "Rust and Bevy game implementation reading maps, characters and other assets from a user's GunZ installation.",
+      "zh-CN": "使用 Rust 和 Bevy 实现游戏，从用户自己的 GunZ 安装目录读取地图、角色及其他资源。"
+    },
+    "rea": {
+      "en": "REA identified the Themida-packed executable and unpacking stub, while gameplay reconstruction proceeded from data files.",
+      "zh-CN": "REA 识别了 Themida 加壳程序和解包桩，玩法重建随后主要依据数据文件进行。"
+    },
+    "limitations": {
+      "en": "The original game logic was not statically recovered through REA, and gameplay and platform compatibility remain bounded.",
+      "zh-CN": "未通过 REA 静态恢复原游戏逻辑，玩法和平台兼容性仍有明确边界。"
+    },
+    "created_at": "2026-10-08T13:49:09Z",
+    "reviewed_at": "2026-10-13"
+  }
+]

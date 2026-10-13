@@ -1,0 +1,191 @@
+[
+  {
+    "id": "gamemax-linux-apps",
+    "name": "GAMEMAX Linux Apps",
+    "target": "GAMEMAX IceBurg Digital Software / PcInfoMonitorPro.exe V1.0.0.04",
+    "repo": "https://github.com/oxpoe/Gamemax-linux-apps",
+    "category": "devices",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/oxpoe/Gamemax-linux-apps/blob/main/docs/reverse-engineering.md",
+      "https://github.com/oxpoe/Gamemax-linux-apps/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "Python HID sender and PySide6 tray app that display Linux system readings on a GAMEMAX IceBurg cooler's LCD.",
+      "zh-CN": "通过 Python HID 发送器和 PySide6 托盘程序，将 Linux 系统监测数据显示在 GAMEMAX IceBurg 水冷的 LCD 上。"
+    },
+    "rea": {
+      "en": "The protocol report records REA 6.4.0, Ghidra 12.1.2 and a local IL dumper used to analyze the Windows vendor software.",
+      "zh-CN": "协议报告记录了使用 REA 6.4.0、Ghidra 12.1.2 和本地 IL 工具分析厂商 Windows 软件的过程。"
+    },
+    "limitations": {
+      "en": "The author tested an IceBurg 240 Digital BK; compatibility with other panel revisions remains unverified.",
+      "zh-CN": "作者测试了 IceBurg 240 Digital BK，其他面板版本的兼容性尚未验证。"
+    },
+    "created_at": "2026-10-12T23:20:01Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "yamaha-rs-232c",
+    "name": "Yamaha RS-232C",
+    "target": "Yamaha Receiver Editor 3 / Yamaha RX-V2500",
+    "repo": "https://github.com/zqushair/yamaha-rs-232c",
+    "category": "devices",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/zqushair/yamaha-rs-232c/blob/main/docs/YamahaReceiverEditor3_RE_Findings.md",
+      "https://github.com/zqushair/yamaha-rs-232c/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "Python serial controller, MQTT daemon and Home Assistant integration for the Yamaha RX-V2500 receiver.",
+      "zh-CN": "面向 Yamaha RX-V2500 功放的 Python 串口控制器、MQTT 守护程序和 Home Assistant 接入。"
+    },
+    "rea": {
+      "en": "The author credits REA binary inspection of YamahaReceiverEditor3.exe for recovering command frames and report decoding.",
+      "zh-CN": "作者明确记录了使用 REA 分析 YamahaReceiverEditor3.exe，以恢复命令帧和状态报告解析。"
+    },
+    "limitations": {
+      "en": "Hardware validation covers the RX-V2500, and the project implements device interoperability rather than the complete Windows editor.",
+      "zh-CN": "硬件验证范围为 RX-V2500，成果是设备互通客户端，未覆盖 Windows 编辑器的全部功能。"
+    },
+    "created_at": "2026-10-12T08:32:39Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "mouselnk-plus",
+    "name": "mouselnk-plus",
+    "target": "MouseInc 2.13.4 / Aitiy 1.0.5",
+    "repo": "https://github.com/Aafff623/mouselnk-plus",
+    "category": "desktop",
+    "stage": "prototype",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/Aafff623/mouselnk-plus/blob/main/CONTEXT.md",
+      "https://github.com/Aafff623/mouselnk-plus/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "C++20/WTL mouse-gesture prototype with trajectory matching, overlays, action execution and hook recovery.",
+      "zh-CN": "使用 C++20/WTL 实现的鼠标手势原型，已有轨迹匹配、浮层、动作执行和钩子恢复功能。"
+    },
+    "rea": {
+      "en": "The project records REA 6.3.0 and Ghidra 12.1.4 analysis of MouseInc and Aitiy alongside behavioral observations and earlier public source references.",
+      "zh-CN": "项目记录了通过 REA 6.3.0 和 Ghidra 12.1.4 分析 MouseInc、Aitiy，并结合行为观察与早期公开源码参考。"
+    },
+    "limitations": {
+      "en": "The core gesture path works according to the author, while settings, OCR, screenshots, hotkeys and other planned features remain incomplete.",
+      "zh-CN": "作者报告核心手势链路已跑通，设置界面、OCR、截图、热键等计划功能仍未完成。"
+    },
+    "created_at": "2026-10-09T00:54:41Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "kensington-verimark-it-linux",
+    "name": "Kensington VeriMark IT Linux",
+    "target": "Kensington VeriMark IT Windows driver 6.0.20.1123 / synaWudfBioUsb123.dll",
+    "repo": "https://github.com/rishubil/kensington-verimark-it-linux",
+    "category": "devices",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/rishubil/kensington-verimark-it-linux/blob/main/docs/findings.md",
+      "https://github.com/rishubil/kensington-verimark-it-linux/blob/main/docs/testing.md"
+    ],
+    "summary": {
+      "en": "Patches to libfprint/synaTudorMiS add VeriMark IT fingerprint support and correct fingerprint deletion on Linux.",
+      "zh-CN": "通过 libfprint/synaTudorMiS 补丁，为 Linux 增加 VeriMark IT 指纹支持并修正指纹删除流程。"
+    },
+    "rea": {
+      "en": "The findings identify the Windows driver by version and SHA256 and explicitly record analysis with REA and Ghidra.",
+      "zh-CN": "研究记录给出 Windows 驱动版本与 SHA256，并明确说明使用 REA 和 Ghidra 进行分析。"
+    },
+    "limitations": {
+      "en": "The author tested firmware 10.1 enrollment, matching and login; suspend/resume and unplugging during an operation remain untested.",
+      "zh-CN": "作者测试了固件 10.1 的录入、匹配和登录，休眠恢复及操作中拔出设备尚未测试。"
+    },
+    "created_at": "2026-10-13T06:57:42Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "roborocli",
+    "name": "roborocli",
+    "target": "Roborock Android app 4.74.08",
+    "repo": "https://github.com/jwmoss/roborocli",
+    "category": "limited",
+    "stage": "compatibility",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/jwmoss/roborocli/blob/main/docs/protocol.md",
+      "https://github.com/jwmoss/roborocli/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "Go CLI for Roborock status, settings, controls, history and maps over local TCP or cloud MQTT.",
+      "zh-CN": "通过本地 TCP 或云 MQTT 访问石头扫地机器人的状态、设置、控制、历史和地图的 Go 命令行客户端。"
+    },
+    "rea": {
+      "en": "REA supplied APK identity evidence, while a REA class-search failure led to direct JADX analysis supplemented by python-roborock references.",
+      "zh-CN": "REA 提供了 APK 身份证据，类搜索失败后改用 JADX 直接分析，并参考 python-roborock。"
+    },
+    "limitations": {
+      "en": "REA's contribution was limited to package inspection, and the author reports live read-only checks on a QX Revo Plus with physical controls and A01/B01 hardware still unverified.",
+      "zh-CN": "REA 的作用限于包检查；作者报告完成了 QX Revo Plus 只读实机检查，物理控制及 A01/B01 设备仍未实机验证。"
+    },
+    "created_at": "2026-10-10T22:39:40Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "motec-clone",
+    "name": "motec_clone",
+    "target": "MoTeC i2",
+    "repo": "https://github.com/therealjohnwall1/motec_clone",
+    "category": "limited",
+    "stage": "prototype",
+    "evidence": "limited",
+    "evidence_urls": [
+      "https://github.com/therealjohnwall1/motec_clone/blob/main/agents/research/REA_skill_status.md",
+      "https://github.com/therealjohnwall1/motec_clone/blob/main/crates/motec-gui/src/main.rs"
+    ],
+    "summary": {
+      "en": "Rust/egui prototype for reading LD/LDX logs and viewing channels, metadata, time plots and beacons.",
+      "zh-CN": "读取 LD/LDX 日志并显示通道、元数据、时间曲线和信标的 Rust/egui 原型。"
+    },
+    "rea": {
+      "en": "REA inspected installer identity and PE resources using portable operations, with evidence IDs retained in the research notes.",
+      "zh-CN": "REA 通过无需原生分析引擎的操作检查安装器身份和 PE 资源，研究记录保留了证据 ID。"
+    },
+    "limitations": {
+      "en": "The parser forks the existing MIT-licensed afonso360/motec-i2 library, and native i2 decompilation and full feature parity remain unachieved.",
+      "zh-CN": "解析器基于现有 MIT 许可的 afonso360/motec-i2 库，尚未完成 i2 原生反编译或完整功能对等。"
+    },
+    "created_at": "2026-10-12T22:17:21Z",
+    "reviewed_at": "2026-10-13"
+  },
+  {
+    "id": "ha-lixiang",
+    "name": "ha-lixiang",
+    "target": "Li Auto Android app / Li ONE vehicle support",
+    "repo": "https://github.com/C3H3-AI/ha-lixiang",
+    "category": "devices",
+    "stage": "compatibility",
+    "evidence": "documented",
+    "evidence_urls": [
+      "https://github.com/C3H3-AI/ha-lixiang/commit/594c0cc7487336150960c499f1e5f95c33527d42",
+      "https://github.com/C3H3-AI/ha-lixiang/blob/main/README.md"
+    ],
+    "summary": {
+      "en": "An existing Home Assistant integration gained Li ONE model configuration and additional vehicle-state mappings on October 12.",
+      "zh-CN": "已有的 Home Assistant 集成于 10 月 12 日补齐理想 ONE 车型配置和更多车辆状态映射。"
+    },
+    "rea": {
+      "en": "The October 12 commit explicitly describes using REA to compare the official APK with the integration and identify missing M01A support.",
+      "zh-CN": "10 月 12 日的提交明确记录了使用 REA 对比官方 APK 与集成代码，发现缺失的 M01A 支持。"
+    },
+    "limitations": {
+      "en": "The repository predates the review week, and some Li ONE control paths still require vehicle verification.",
+      "zh-CN": "仓库创建早于本次核查周，部分理想 ONE 控制通道仍需实车验证。"
+    },
+    "created_at": "2026-10-04T11:56:19Z",
+    "reviewed_at": "2026-10-13"
+  }
+]

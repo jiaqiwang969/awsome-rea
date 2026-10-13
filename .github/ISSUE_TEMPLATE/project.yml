@@ -1,0 +1,34 @@
+name: Suggest a project / 推荐项目
+description: Share a public project with a concrete REA contribution / 提交有明确 REA 参与的公开成果
+title: '[Project] '
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: Repository URL / 仓库链接
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Original software or target / 原软件或目标
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: REA evidence / REA 使用证据
+      description: Link to the author's analysis, code or tool records and explain REA's role. / 提供作者分析、源码或工具记录，说明 REA 的具体作用。
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What exists and what is missing / 现有成果与缺口
+      description: Describe the public artifact, original-runtime dependencies and unverified claims. / 说明公开成果、原运行时依赖和未验证内容。
+    validations:
+      required: true
+  - type: textarea
+    id: bilingual
+    attributes:
+      label: Suggested English and Chinese summaries / 建议中英文简介

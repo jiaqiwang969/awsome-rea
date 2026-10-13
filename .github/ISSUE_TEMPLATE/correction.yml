@@ -1,0 +1,17 @@
+name: Correct an entry / 纠正条目
+description: Report an inaccurate claim or a moved source / 报告错误描述或来源迁移
+title: '[Correction] '
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project or catalog entry / 项目或目录条目
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction and evidence / 更正内容及证据
+      description: Include a direct source where possible. / 尽量附上直接来源。
+    validations:
+      required: true

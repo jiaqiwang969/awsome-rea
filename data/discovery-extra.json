@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pgmmv-decrypt",
+    "name": "PGMMV-decrypt",
+    "target": "Pixel Game Maker MV encrypted resource format",
+    "repo": "https://github.com/nosini/PGMMV-decrypt",
+    "category": "games",
+    "stage": "compatibility",
+    "evidence": "attributed",
+    "evidence_urls": [
+      "https://github.com/nosini/PGMMV-decrypt/commit/4ebe64cc539dff0e3852526f81673379bf8bf97c",
+      "https://github.com/nosini/PGMMV-decrypt"
+    ],
+    "summary": {
+      "en": "Adds encrypted-resource decoding to the open-source PGMMV Linux player, using algorithms adapted from the existing MIT-licensed pgmm_decrypt project.",
+      "zh-CN": "为开源 PGMMV Linux 播放器补充加密资源解码，算法改编自已有 MIT 许可项目 pgmm_decrypt。"
+    },
+    "rea": {
+      "en": "The implementation commit explicitly says REA and Ghidra checked the resource algorithms against the official player; detailed tool records are not provided.",
+      "zh-CN": "实现提交明确说明使用 REA 与 Ghidra 对照官方播放器核验资源算法，但未提供详细工具记录。"
+    },
+    "limitations": {
+      "en": "This is resource-format compatibility work, not recovery of the whole player; games must be supplied separately, and Windows DLL plugins remain unsupported.",
+      "zh-CN": "成果是资源格式兼容，并非恢复完整播放器；游戏须另行提供，仍不支持 Windows DLL 插件。"
+    },
+    "created_at": "2026-10-13T11:21:06Z",
+    "reviewed_at": "2026-10-13"
+  }
+]
