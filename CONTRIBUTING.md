@@ -12,6 +12,8 @@ Additions, corrections and removals are welcome. A useful entry connects a named
 4. Provide English and Simplified Chinese text with the same scope. Do not translate an uncertainty into a stronger claim.
 5. Add exactly one entry to a JSON array in `data/`. The source file is only an editing group; the entry's `category` determines where it appears.
 
+Start with a plain-language introduction to the original software: what people use it for and its main functions. For a game, briefly describe the gameplay; for a device app, explain what it lets the owner control. For example, describe Everything as “Find files and folders on a Windows computer by typing part of their names.” Keep this original purpose separate from the reconstruction's actual capabilities.
+
 Do not submit credential material, original commercial binaries, extracted assets or copied third-party code to this catalog. Link to the project's own evidence instead. Do not label a project open source solely because its repository is public.
 
 ## Data fields
@@ -22,6 +24,7 @@ Every record has the following fields; existing records provide complete example
 | --- | --- |
 | `id` | Stable, unique lowercase slug. |
 | `name`, `target`, `repo` | Result name, original target, and canonical public GitHub repository URL. |
+| `target_description` | Objects with `en` and `zh-CN`: one or two plain-language sentences explaining the original software's purpose and main functions. |
 | `category` | `desktop`, `media`, `web`, `devices`, `games`, or `limited`. |
 | `stage` | `implementation`, `prototype`, `partial`, `compatibility`, or `research`; not a quality rating. |
 | `evidence` | `documented`, `attributed`, or `limited`, as defined on the homepage. |

@@ -3,6 +3,10 @@
     "id": "pgmmv-decrypt",
     "name": "PGMMV-decrypt",
     "target": "Pixel Game Maker MV encrypted resource format",
+    "target_description": {
+      "en": "A visual tool for creating two-dimensional games by arranging characters, scenes, actions and events, without requiring users to write program code.",
+      "zh-CN": "可视化的二维游戏制作工具，让用户通过配置角色、关卡、动作和事件制作自己的游戏，无需编程。"
+    },
     "repo": "https://github.com/nosini/PGMMV-decrypt",
     "category": "games",
     "stage": "compatibility",

@@ -35,7 +35,7 @@ EVIDENCE = {
     "limited": ("Limited", "有限参与"),
 }
 FIELDS = {
-    "id", "name", "target", "repo", "category", "stage", "evidence",
+    "id", "name", "target", "target_description", "repo", "category", "stage", "evidence",
     "evidence_urls", "summary", "rea", "limitations", "created_at", "reviewed_at",
 }
 
@@ -67,7 +67,7 @@ def read_catalog():
             for field, values in (("category", CATEGORIES), ("stage", STAGES), ("evidence", EVIDENCE)):
                 require(item[field] in values, f"{label}: invalid {field}")
             require((item["category"] == "limited") == (item["evidence"] == "limited"), f"{label}: limited evidence must use the limited category")
-            for field in ("summary", "rea", "limitations"):
+            for field in ("target_description", "summary", "rea", "limitations"):
                 require(isinstance(item[field], dict) and set(item[field]) == set(LANGUAGES), f"{label}: {field} needs both languages")
                 for language, text in item[field].items():
                     require(isinstance(text, str) and text.strip() and "\n" not in text, f"{label}: invalid {field}.{language}")
@@ -98,10 +98,11 @@ def in_initial_window(item):
 
 def table(entries, language):
     n = LANGUAGES.index(language)
-    headings = ("Project / target", "Scope and boundary", "REA evidence", "Created · UTC") if n == 0 else ("项目／原目标", "成果与边界", "REA 证据", "建库日 · UTC")
+    headings = ("Project / what the original software does", "What this project delivers", "REA evidence", "Created · UTC") if n == 0 else ("项目／原软件做什么", "这个项目做到了什么", "REA 证据", "建库日 · UTC")
     lines = ["| " + " | ".join(headings) + " |", "| --- | --- | --- | --- |"]
     for item in entries:
-        name = f"[{clean(item['name'])}]({item['repo']})<br>{clean(item['target'])}"
+        target_label = "Original: " if n == 0 else "原软件："
+        name = f"[{clean(item['name'])}]({item['repo']})<br>**{target_label}{clean(item['target'])}**<br>{clean(item['target_description'][language])}"
         scope = f"**{STAGES[item['stage']][n]}** — {clean(item['summary'][language])}<br>{clean(item['limitations'][language])}"
         source_label = "source" if n == 0 else "来源"
         sources = " · ".join(f"[{source_label} {i}]({url})" for i, url in enumerate(item["evidence_urls"], 1))
@@ -123,7 +124,7 @@ def homepage(entries, language):
     if n == 0:
         lines += [
             "A curated collection of software reconstructions, compatibility tools and research built with [REA — Reverse Engineer Anything](https://github.com/morluto/rea), with links to the actual implementations and evidence.", "",
-            "The initial collection focuses on closed-source targets discovered during October 2026. Each entry explains what REA contributed, what was built, and what remains incomplete. REA connects coding agents to analysis tools; using it does not mean the original source code was recovered.", "",
+            "The initial collection focuses on closed-source targets discovered during October 2026. Each entry starts with a plain-language introduction to what the original software does, then explains what the project delivers, what REA contributed, and what remains incomplete. REA connects coding agents to analysis tools; using it does not mean the original source code was recovered.", "",
             f"**{len(entries)} projects · {evidence_counts['documented']} with specific analysis records · {evidence_counts['attributed']} with author attribution · {evidence_counts['limited']} with limited REA involvement.** Last reviewed: **{reviewed}**.", "",
             f"**Initial review window, October 7–13, 2026:** {recent} repositories were created during this window. Older repositories are retained with their actual creation dates; {unknown} creation dates remain unchecked. Dates link to GitHub metadata and are UTC repository-creation dates, not release dates or proof of when a private repository became public.", "",
             "## Start here", "",
@@ -143,7 +144,7 @@ def homepage(entries, language):
     else:
         lines += [
             "收集使用 [REA — Reverse Engineer Anything](https://github.com/morluto/rea) 开展的软件重建、兼容工具和研究，直接链接实际实现与分析证据。", "",
-            "首批条目聚焦 2026 年 10 月发现的闭源软件案例。每个条目说明 REA 做了什么、产出了什么、还有哪些未完成。REA 帮助编程智能体调用分析工具；使用过 REA 不代表恢复了原始源码。", "",
+            "首批条目聚焦 2026 年 10 月发现的闭源软件案例。每项先用一句话介绍原软件是做什么的，再说明这个项目做到了什么、REA 起了什么作用、还有哪些未完成。REA 帮助编程智能体调用分析工具；使用过 REA 不代表恢复了原始源码。", "",
             f"**{len(entries)} 个项目 · {evidence_counts['documented']} 项有具体分析记录 · {evidence_counts['attributed']} 项有作者声明 · {evidence_counts['limited']} 项属于 REA 有限参与。** 最近核查：**{reviewed}**。", "",
             f"**首期时间窗口：2026 年 10 月 7—13 日。** 其中 {recent} 个仓库在此期间创建；较早仓库保留实际建库日期，另有 {unknown} 项日期尚未核对。日期链接到 GitHub 元数据，采用 UTC，表示建库时间，不表示正式发布或私有仓库转公开时间。", "",
             "## 从这里开始", "",

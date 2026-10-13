@@ -3,6 +3,10 @@
     "id": "diskdude-reconstruction",
     "name": "DiskDude reconstruction",
     "target": "DiskDude 1.0.1",
+    "target_description": {
+      "en": "A macOS disk space analyzer that visualizes storage usage, locates large or duplicate files and helps users identify opportunities to free space.",
+      "zh-CN": "macOS 磁盘空间分析工具，用图形展示存储占用，查找大文件和重复文件，帮助用户判断哪些内容可以清理。"
+    },
     "repo": "https://github.com/heictojpgpics/DiskDude",
     "category": "desktop",
     "stage": "partial",
@@ -30,6 +34,10 @@
     "id": "mikropuhe",
     "name": "MikroPuhe / puhu",
     "target": "Timehouse MikroPuhe 1.0 / PUHU.EXE (1990)",
+    "target_description": {
+      "en": "An early Finnish text-to-speech program for DOS that reads typed text or text files aloud through the PC speaker, with selectable voices and speed.",
+      "zh-CN": "早期 DOS 芬兰语语音合成软件，可通过电脑扬声器朗读输入文字或文本文件，并选择不同音色及语速。"
+    },
     "repo": "https://github.com/WokenBits/mikropuhe",
     "category": "media",
     "stage": "implementation",
@@ -57,6 +65,10 @@
     "id": "touchmiddle",
     "name": "TouchMiddle",
     "target": "BetterTouchTool 6.908 (arm64)",
+    "target_description": {
+      "en": "A macOS customization tool for assigning trackpad gestures, mouse buttons and keyboard shortcuts to actions, including window management and repetitive tasks.",
+      "zh-CN": "macOS 操作定制工具，可为触控板手势、鼠标按钮和键盘快捷键分配动作，简化窗口管理与重复操作。"
+    },
     "repo": "https://github.com/ilovetai1/TouchMiddle",
     "category": "desktop",
     "stage": "prototype",
@@ -84,6 +96,10 @@
     "id": "feishu-rea",
     "name": "Feishu REA research",
     "target": "Feishu 8.1.17 for macOS (arm64)",
+    "target_description": {
+      "en": "A workplace collaboration suite combining messaging, meetings, shared documents and calendars so teams can communicate, coordinate schedules and work together on information.",
+      "zh-CN": "企业协作平台，将聊天、会议、共享文档和日历等功能集中在一起，方便团队沟通、安排工作并共同编辑资料。"
+    },
     "repo": "https://github.com/jiayan-ai/feishu-rea",
     "category": "desktop",
     "stage": "research",
@@ -111,6 +127,10 @@
     "id": "rea-video-codec-study",
     "name": "REA video codec study",
     "target": "ZSpace Windows client 2.44.2026080401.267 / UZPlayer",
+    "target_description": {
+      "en": "The Windows companion client for ZSpace personal storage devices lets users access and manage stored files, browse photos and play their video collections.",
+      "zh-CN": "极空间私有云的 Windows 配套客户端，用于访问和管理存储设备中的文件、浏览照片并播放收藏的视频。"
+    },
     "repo": "https://github.com/qinyishcn/rea-video-codec-study",
     "category": "media",
     "stage": "research",

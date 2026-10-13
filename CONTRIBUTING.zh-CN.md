@@ -12,6 +12,8 @@
 4. 同时提供英文和简体中文，保持范围与不确定性一致，不在翻译中增强结论。
 5. 在 `data/` 的一个 JSON 数组中加入一条记录。文件仅用于编辑分组，实际展示类别由 `category` 决定。
 
+先用一两句通俗的话介绍原软件：用户拿它做什么、主要有哪些功能。游戏说明怎么玩；设备应用说明能控制什么。例如 Everything 可以写成“输入文件名，就能快速找到 Windows 电脑里的文件和文件夹”。原软件的用途与重建项目实际具备的功能分别描述。
+
 不要向本目录提交凭据、原商业程序、提取资源或复制的第三方代码；直接链接项目自身的证据。不要仅因仓库公开，就把项目称为开源软件。
 
 ## 数据字段
@@ -22,6 +24,7 @@
 | --- | --- |
 | `id` | 稳定且唯一的小写标识。 |
 | `name`、`target`、`repo` | 成果名称、原目标、规范的公开 GitHub 仓库链接。 |
+| `target_description` | 含 `en` 与 `zh-CN` 的对象：用一两句通俗的话介绍原软件用途及主要功能。 |
 | `category` | `desktop`、`media`、`web`、`devices`、`games` 或 `limited`。 |
 | `stage` | `implementation`、`prototype`、`partial`、`compatibility` 或 `research`，不表示质量评分。 |
 | `evidence` | `documented`、`attributed` 或 `limited`，定义见首页。 |

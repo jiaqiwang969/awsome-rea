@@ -3,6 +3,10 @@
     "id": "vd-streamer-linux",
     "name": "Virtual Desktop Streamer for Linux",
     "target": "Virtual Desktop Streamer",
+    "target_description": {
+      "en": "A computer companion for Virtual Desktop that streams the desktop and sound to a VR headset, letting users view and operate their computer in virtual reality.",
+      "zh-CN": "Virtual Desktop 的电脑端配套程序，把桌面和声音传到 VR 头显，让用户在虚拟现实中查看和操作电脑。"
+    },
     "repo": "https://github.com/cudanexus/vd-streamer-linux",
     "category": "desktop",
     "stage": "compatibility",
@@ -29,6 +33,10 @@
     "id": "wh3-save-editor",
     "name": "WH3SaveEditor",
     "target": "Total War: WARHAMMER III",
+    "target_description": {
+      "en": "A fantasy strategy game combining turn-based empire management, diplomacy, and army building with large real-time battles between the factions of the Warhammer world.",
+      "zh-CN": "奇幻战争策略游戏，玩家在战役地图上经营领地、开展外交和组建军队，再指挥不同种族的部队进行大规模即时战斗。"
+    },
     "repo": "https://github.com/davehornik/WH3SaveEditor",
     "category": "games",
     "stage": "compatibility",
@@ -55,6 +63,10 @@
     "id": "dx-ball",
     "name": "DX-Ball reconstruction",
     "target": "DX-Ball 1.07",
+    "target_description": {
+      "en": "A brick-breaking arcade game where players move a paddle to bounce a ball, clear brick formations, and collect power-ups across successive levels.",
+      "zh-CN": "经典打砖块游戏，玩家移动挡板反弹小球，击碎关卡中的砖块，并拾取强化道具，争取在球落下前完成清场。"
+    },
     "repo": "https://github.com/N0zoM1z0/dx-ball",
     "category": "games",
     "stage": "partial",
@@ -82,6 +94,10 @@
     "id": "th04",
     "name": "TH04 reconstruction",
     "target": "Touhou 4: Lotus Land Story",
+    "target_description": {
+      "en": "A vertically scrolling shooting game in which players guide a character through enemy waves, dodge dense bullet patterns, and defeat stage bosses.",
+      "zh-CN": "东方系列的纵向卷轴射击游戏，玩家操纵角色在关卡中射击敌人、躲避密集弹幕，并挑战各关首领。"
+    },
     "repo": "https://github.com/N0zoM1z0/th04",
     "category": "games",
     "stage": "partial",
@@ -109,6 +125,10 @@
     "id": "ski-or-die",
     "name": "Snowball War reconstruction",
     "target": "Ski or Die: Snowball War",
+    "target_description": {
+      "en": "The snowball-fighting event in Ski or Die, where players move around, throw snowballs at opponents, and score points before the round ends.",
+      "zh-CN": "冬季运动游戏《Ski or Die》中的打雪仗项目，玩家移动、投掷雪球并命中对手，在限时关卡中争取得分。"
+    },
     "repo": "https://github.com/tuunanet/rea-ski-or-die-reconstruction",
     "category": "games",
     "stage": "implementation",
@@ -136,6 +156,10 @@
     "id": "zee-rp",
     "name": "zee-rp",
     "target": "Axure RP 11 native .rp format",
+    "target_description": {
+      "en": "A tool for designing interactive website and app prototypes, letting teams arrange screens, define interactions, and demonstrate product flows before building the finished software.",
+      "zh-CN": "用于制作网站和应用的交互原型，可绘制页面、设置按钮跳转与交互，用于演示产品流程和沟通设计。"
+    },
     "repo": "https://github.com/LilZeeCN/zee-rp",
     "category": "desktop",
     "stage": "compatibility",
@@ -163,6 +187,10 @@
     "id": "baocut-slides",
     "name": "BaoCut Slides integration",
     "target": "Claude Slides editor frontend",
+    "target_description": {
+      "en": "The presentation editor within Claude, used to create and revise slide decks, adjust text and layouts, and preview how the presentation will look.",
+      "zh-CN": "Claude 中的演示文稿编辑功能，用于创建和修改幻灯片、调整文字与页面布局，并预览演示效果。"
+    },
     "repo": "https://github.com/JimLiu/baocut",
     "category": "media",
     "stage": "partial",
@@ -190,6 +218,10 @@
     "id": "reacut",
     "name": "ReaCut",
     "target": "CapCut / Jianying",
+    "target_description": {
+      "en": "A video editor for assembling clips, trimming footage, adding music, captions, filters, and transitions, and exporting finished videos for sharing.",
+      "zh-CN": "视频剪辑软件，可拼接和裁剪素材、添加配乐与字幕、使用滤镜和转场，再导出适合分享的视频。"
+    },
     "repo": "https://github.com/Xiangyu-CAS/rea-capcut",
     "category": "media",
     "stage": "prototype",
@@ -217,6 +249,10 @@
     "id": "ledger-reborn",
     "name": "Ledger Reborn",
     "target": "QuickBooks Desktop for Mac 2024 Trial",
+    "target_description": {
+      "en": "Accounting software for small businesses on Mac, used to track income and expenses, create invoices, reconcile bank transactions, and prepare financial reports.",
+      "zh-CN": "面向小型企业的 Mac 财务软件，用于记录收入和支出、开具账单、核对银行交易，并生成财务报表。"
+    },
     "repo": "https://github.com/lxistired/ledger-reborn",
     "category": "desktop",
     "stage": "prototype",
@@ -244,6 +280,10 @@
     "id": "wispr-flow-teardown",
     "name": "Wispr Flow teardown and minimal app",
     "target": "Wispr Flow",
+    "target_description": {
+      "en": "A voice dictation assistant that turns speech into polished text in everyday apps, helping users write messages, emails, and documents by speaking.",
+      "zh-CN": "语音输入助手，把说出的话整理成通顺文字并填入常用应用，让用户通过口述撰写消息、邮件和文档。"
+    },
     "repo": "https://github.com/az9713/wispr-flow-rea-teardown",
     "category": "desktop",
     "stage": "prototype",
@@ -270,6 +310,10 @@
     "id": "driveindex",
     "name": "Driveindex model",
     "target": "driveindex.com valuation frontend",
+    "target_description": {
+      "en": "A car valuation and market-tracking website that compares sale prices and model trends, tracks collection values, and helps users assess vehicle asking prices.",
+      "zh-CN": "汽车行情与估值网站，汇总成交价格、比较车型走势并追踪收藏车辆价值，帮助用户判断买卖报价是否合理。"
+    },
     "repo": "https://github.com/InshaKhan6593/Driveindex",
     "category": "web",
     "stage": "partial",
@@ -297,6 +341,10 @@
     "id": "vitals-clone",
     "name": "VitalsClone",
     "target": "Vitals by Fore Studio (vitalsmac.com)",
+    "target_description": {
+      "en": "A Mac system monitor that groups processes by app and shows processor, memory, disk, and network usage to help identify resource-heavy software.",
+      "zh-CN": "Mac 系统监视工具，把进程按应用归类，查看处理器、内存、磁盘和网络占用，帮助找出拖慢电脑的程序。"
+    },
     "repo": "https://github.com/Samin12/vitals-clone",
     "category": "desktop",
     "stage": "prototype",
@@ -323,6 +371,10 @@
     "id": "lino",
     "name": "open-typora (formerly Lino)",
     "target": "Typora",
+    "target_description": {
+      "en": "A writing app for Markdown documents and notes that displays formatting as you type, so users can write and read the finished layout in one place.",
+      "zh-CN": "用于撰写 Markdown 文档和笔记的编辑器，输入时直接显示标题、列表和图片等排版，方便边写边查看成稿效果。"
+    },
     "repo": "https://github.com/yruichen/lino",
     "category": "desktop",
     "stage": "prototype",
@@ -349,6 +401,10 @@
     "id": "cupcut",
     "name": "CupCut",
     "target": "CapCut Desktop 9.4",
+    "target_description": {
+      "en": "A desktop video editor for assembling clips, trimming footage, adding music, captions, filters, and transitions, and exporting finished videos for sharing.",
+      "zh-CN": "桌面视频剪辑软件，可拼接和裁剪素材、添加配乐与字幕、使用滤镜和转场，再导出适合分享的视频。"
+    },
     "repo": "https://github.com/aglcode/cupcut_reverse_engineering",
     "category": "media",
     "stage": "prototype",
@@ -375,6 +431,10 @@
     "id": "dji-reframe-linux",
     "name": "DJI Reframe for Linux",
     "target": "DJI Reframe OFX plugin",
+    "target_description": {
+      "en": "A video-editing plugin for choosing viewing directions and framing from DJI 360-degree footage, turning panoramic recordings into the shots users want.",
+      "zh-CN": "用于全景视频后期取景，在剪辑软件中调整观看方向和视角，把 DJI 360° 素材转换成想要的画面。"
+    },
     "repo": "https://github.com/dhomoney/dji-reframe-linux",
     "category": "media",
     "stage": "compatibility",
@@ -401,6 +461,10 @@
     "id": "tvs-ride-companion",
     "name": "TVSRideCompanion",
     "target": "TVS Connect Android app and instrument-cluster protocol",
+    "target_description": {
+      "en": "A companion app for TVS motorcycles and scooters that connects to the instrument display, shows ride information, and provides navigation, call alerts, and service features.",
+      "zh-CN": "TVS 摩托车与踏板车的手机配套应用，用于连接车载仪表、查看骑行信息，并提供导航、来电提示与车辆服务。"
+    },
     "repo": "https://github.com/athulkrishna2015/TVSRideCompanion",
     "category": "devices",
     "stage": "compatibility",
@@ -428,6 +492,10 @@
     "id": "minesweeper-linux",
     "name": "Minesweeper Linux recomp",
     "target": "Windows XP WINMINE.EXE",
+    "target_description": {
+      "en": "A logic puzzle game where players uncover a grid, use number clues to locate hidden mines, and clear safe squares without triggering an explosion.",
+      "zh-CN": "经典逻辑解谜游戏，玩家点击方格，根据数字提示推断地雷位置，标记危险格并翻开所有安全区域。"
+    },
     "repo": "https://github.com/NexonSU/minesweeper-linux-recomp",
     "category": "games",
     "stage": "implementation",
@@ -454,6 +522,10 @@
     "id": "gifpack",
     "name": "GifPack",
     "target": "iledcolor LED-backpack companion app",
+    "target_description": {
+      "en": "A phone app for controlling LED screens on backpacks and other devices, displaying pictures, animations, text, drawings, and lighting effects that respond to music.",
+      "zh-CN": "手机端 LED 屏控制应用，可把图片、动画、文字和涂鸦显示在背包等设备上，并设置随音乐变化的显示效果。"
+    },
     "repo": "https://github.com/PeterkoCZ91/iledcolor-backpack",
     "category": "devices",
     "stage": "compatibility",
@@ -480,6 +552,10 @@
     "id": "v5vpn-client",
     "name": "V5VPN REA client",
     "target": "LeadSec V5VPN",
+    "target_description": {
+      "en": "An enterprise remote-access client that connects employees securely to their company network so they can use internal websites, business systems, and file resources.",
+      "zh-CN": "企业远程接入客户端，让员工通过加密连接访问公司内网中的办公网站、业务系统和文件资源。"
+    },
     "repo": "https://github.com/hygkui/v5vpn-rea-client",
     "category": "desktop",
     "stage": "compatibility",
@@ -506,6 +582,10 @@
     "id": "nival-bot",
     "name": "Nival Bot",
     "target": "Grok Bot 0.70.2",
+    "target_description": {
+      "en": "An AI work assistant that takes tasks through chat, uses connected apps and files, and continues multi-step work on a persistent cloud computer.",
+      "zh-CN": "AI 办公助手，让用户通过对话安排任务，连接常用应用、处理文件，并由云端电脑持续执行工作。"
+    },
     "repo": "https://github.com/Snowbow19/nival-bot-rea",
     "category": "desktop",
     "stage": "prototype",
@@ -533,6 +613,10 @@
     "id": "lstarwars",
     "name": "LEGO Star Wars reconstruction checkpoint",
     "target": "LEGO Star Wars: The Complete Saga",
+    "target_description": {
+      "en": "A LEGO action-adventure game covering the first six Star Wars films, with character-based puzzles, combat, collectibles, and cooperative play.",
+      "zh-CN": "以乐高风格重现《星球大战》前六部电影的动作冒险游戏，玩家操纵角色战斗、解谜、收集物品，也可双人合作。"
+    },
     "repo": "https://github.com/nmdurkee/LStarwars-Decompile",
     "category": "games",
     "stage": "partial",
@@ -560,6 +644,10 @@
     "id": "60fps-video",
     "name": "60FPSVideo",
     "target": "SVP 4 Mac",
+    "target_description": {
+      "en": "A video playback and conversion tool that generates intermediate frames to make films and other videos look smoother at higher frame rates.",
+      "zh-CN": "视频流畅化工具，通过补充中间画面提高播放帧率，让电影等视频中的运动更平滑，也可转换并保存处理后的视频。"
+    },
     "repo": "https://github.com/wasim-osman/60FPSVideo",
     "category": "limited",
     "stage": "implementation",
@@ -587,6 +675,10 @@
     "id": "speakmore",
     "name": "SpeakMore",
     "target": "Typeless macOS client",
+    "target_description": {
+      "en": "A voice typing app that turns spoken thoughts into clean, structured text in other apps, reducing filler words and helping users write without a keyboard.",
+      "zh-CN": "语音打字工具，把口述内容整理成清晰文字，去掉口头语并改善表达，让用户在常用应用中直接用说话代替打字。"
+    },
     "repo": "https://github.com/zephyr4123/speakmore",
     "category": "desktop",
     "stage": "implementation",
@@ -614,6 +706,10 @@
     "id": "paper-rs",
     "name": "paper-rs",
     "target": "Paper desktop app",
+    "target_description": {
+      "en": "A visual design workspace for arranging interfaces, text, and graphics on a shared canvas, collaborating with teammates, and carrying designs into website development.",
+      "zh-CN": "界面与视觉设计工具，可在画布上排版文字、图片和页面，与团队协作分享设计，并把设计衔接到网页制作。"
+    },
     "repo": "https://github.com/michaelshimeles/paper-rs",
     "category": "desktop",
     "stage": "implementation",
@@ -641,6 +737,10 @@
     "id": "renotepad",
     "name": "RENotepad",
     "target": "Windows 10 Notepad 10.0.19041.5856",
+    "target_description": {
+      "en": "A basic Windows text editor for opening, writing, searching, and saving plain-text files, commonly used for quick notes and simple configuration changes.",
+      "zh-CN": "Windows 自带的简易文本编辑器，可打开、编写、查找和保存纯文本，常用于临时记事或修改简单配置文件。"
+    },
     "repo": "https://github.com/nikkoxgonzales/RENotepad",
     "category": "desktop",
     "stage": "implementation",
@@ -668,6 +768,10 @@
     "id": "plainpad",
     "name": "Plainpad",
     "target": "Antinote 2.1.0",
+    "target_description": {
+      "en": "A quick-access Mac scratchpad for temporary notes, checklists, calculations, unit conversions, and timers, helping users handle small tasks without opening several apps.",
+      "zh-CN": "Mac 上可随时呼出的临时便笺，用于随手记事、列清单、计算数字、换算单位和设置计时器，集中处理日常小任务。"
+    },
     "repo": "https://github.com/Stewy8506/Plainpad",
     "category": "desktop",
     "stage": "prototype",
@@ -695,6 +799,10 @@
     "id": "vsl-dsp",
     "name": "VSL-DSP",
     "target": "PreSonus AudioBox VSL / Universal Control Android",
+    "target_description": {
+      "en": "PreSonus companion software for audio interfaces and mixers, used to set channel levels, build headphone or stage-monitor mixes, and adjust sound effects.",
+      "zh-CN": "PreSonus 声卡与调音设备的配套控制软件，帮助用户设置通道音量、耳机或舞台监听混音，并调节音效。"
+    },
     "repo": "https://github.com/grisuno/VSL-DSP",
     "category": "devices",
     "stage": "compatibility",
@@ -722,6 +830,10 @@
     "id": "maccabi-export",
     "name": "Health Records Export for Maccabi",
     "target": "Maccabi Online",
+    "target_description": {
+      "en": "A personal healthcare portal for Maccabi members in Israel, used to view medical records and test results, book appointments, and send requests to doctors.",
+      "zh-CN": "以色列 Maccabi 医疗机构的个人服务网站，用于查看医疗记录和检验结果、预约就诊，并向医生提交请求。"
+    },
     "repo": "https://github.com/RoniRachmani/health-records-export-for-maccabi",
     "category": "limited",
     "stage": "compatibility",
@@ -748,6 +860,10 @@
     "id": "openbattlefield2",
     "name": "OpenBattlefield2",
     "target": "Battlefield 2 / Refractor 2",
+    "target_description": {
+      "en": "A multiplayer military shooter where players fight in squads, use infantry weapons and land or air vehicles, and compete to control battlefield objectives.",
+      "zh-CN": "多人军事射击游戏，玩家组成小队，使用步兵武器和陆空载具协同作战，争夺战场上的据点与控制权。"
+    },
     "repo": "https://github.com/Moxnatiy/OpenBattlefield2",
     "category": "games",
     "stage": "partial",
@@ -775,6 +891,10 @@
     "id": "lotion",
     "name": "Notion Linux Repack",
     "target": "Notion Windows desktop client",
+    "target_description": {
+      "en": "A shared workspace for notes, documents, databases, and tasks, helping individuals and teams organize information, build knowledge bases, and manage projects.",
+      "zh-CN": "集笔记、文档、数据库和任务于一体的协作空间，供个人与团队整理资料、建立知识库并管理项目进度。"
+    },
     "repo": "https://github.com/TYBLHQY/lotion",
     "category": "limited",
     "stage": "compatibility",
@@ -801,6 +921,10 @@
     "id": "dota2-ai-replica",
     "name": "Dota 2 AI Replica",
     "target": "Dota 2",
+    "target_description": {
+      "en": "A five-versus-five team strategy game where players control heroes, gain levels and equipment, and work together to destroy the central structure in the opposing base.",
+      "zh-CN": "五人对五人的团队竞技游戏，玩家操纵英雄升级、购买装备，与队友配合推进战线，目标是摧毁对方的远古遗迹。"
+    },
     "repo": "https://github.com/ArkIllus/dota2-ai-replica",
     "category": "games",
     "stage": "prototype",
@@ -828,6 +952,10 @@
     "id": "gunzrs",
     "name": "GunZRs",
     "target": "GunZ: The Duel",
+    "target_description": {
+      "en": "A fast-paced online third-person action game combining gunfights and sword combat with wall running, acrobatic movement, and competitive multiplayer matches.",
+      "zh-CN": "快节奏的第三人称在线动作游戏，把枪战与刀剑近战结合，玩家利用跑墙、跳跃等动作，在多人对战中交锋。"
+    },
     "repo": "https://github.com/OpenRsG/GunZRs",
     "category": "limited",
     "stage": "implementation",

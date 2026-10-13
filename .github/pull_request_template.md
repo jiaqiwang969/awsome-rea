@@ -9,5 +9,6 @@ Link the first-party evidence for REA involvement and the implementation scope. 
 ## Checks / 检查
 
 - [ ] Both language versions describe the same scope. / 中英文描述范围一致。
+- [ ] The original software's purpose is explained in plain language. / 已用通俗语言说明原软件的用途。
 - [ ] REA attribution and limitations match the sources. / REA 归因和限制符合来源。
 - [ ] I ran `python3 scripts/build_catalog.py` and `python3 scripts/build_catalog.py --check`.

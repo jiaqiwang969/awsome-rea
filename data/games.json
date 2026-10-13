@@ -3,6 +3,10 @@
     "id": "desktop-games-nostalgia",
     "name": "Desktop Games Nostalgia",
     "target": "Desktop Games / Stress Reducers",
+    "target_description": {
+      "en": "A desktop stress-relief toy that turns a screenshot into a playground for smashing, sawing, painting and other exaggerated destruction effects.",
+      "zh-CN": "一款桌面解压小游戏，把屏幕截图变成可敲打、锯切和涂色的画布，制造夸张的破坏效果。"
+    },
     "repo": "https://github.com/ucodia/desktop-games-nostalgia",
     "category": "games",
     "stage": "implementation",
@@ -29,6 +33,10 @@
     "id": "card-games-to-go-revived",
     "name": "Card Games To Go, revived",
     "target": "Solitaire and Card Games To Go (Pocket PC)",
+    "target_description": {
+      "en": "A handheld card-game collection featuring solitaire variants and games against computer opponents, including Klondike, Spider, Golf, War, Hearts and Spades.",
+      "zh-CN": "面向掌上电脑的纸牌合集，可玩接龙、蜘蛛、红心大战等游戏，按各自规则整理牌组或与电脑对局。"
+    },
     "repo": "https://github.com/Ozdotdotdot/card-games-to-go-revived",
     "category": "games",
     "stage": "implementation",
@@ -56,6 +64,10 @@
     "id": "rustfighter",
     "name": "Rustfighter",
     "target": "Street Fighter II (MS-DOS)",
+    "target_description": {
+      "en": "A classic one-on-one fighting game where players choose distinctive martial artists and combine attacks, special moves and defensive timing to win matches.",
+      "zh-CN": "经典的一对一格斗游戏，选择不同角色，通过拳脚、特殊招式和防守击败对手，逐场赢得比赛。"
+    },
     "repo": "https://github.com/Mynd-labs/rustfighter",
     "category": "games",
     "stage": "partial",
@@ -83,6 +95,10 @@
     "id": "re-twist-tt2",
     "name": "re-twist-tt2",
     "target": "Text Twist 2",
+    "target_description": {
+      "en": "A word puzzle game where players rearrange supplied letters to discover words, with timed, untimed and crossword-style challenges.",
+      "zh-CN": "英文拼词益智游戏，把给定字母重新组合成尽可能多的单词，并挑战计时、不限时和填字等模式。"
+    },
     "repo": "https://github.com/jcchikikomori/re-twist-tt2",
     "category": "games",
     "stage": "partial",
@@ -110,6 +126,10 @@
     "id": "spelljammer-reboot",
     "name": "Spelljammer 1992 Reboot",
     "target": "Spelljammer: Pirates of Realmspace",
+    "target_description": {
+      "en": "A fantasy space adventure where players captain a magical ship, trade between planets, undertake missions and fight ship battles or boarding actions.",
+      "zh-CN": "奇幻太空冒险游戏，指挥魔法飞船在星球间航行，做买卖、接任务，并进行舰船交战和登船战斗。"
+    },
     "repo": "https://github.com/rexsaurus/spelljammer-reboot",
     "category": "games",
     "stage": "prototype",
@@ -137,6 +157,10 @@
     "id": "lezac-decompilation",
     "name": "Lezac decompilation",
     "target": "Larax & Zaco v1.0 shareware",
+    "target_description": {
+      "en": "A platform strategy game for one or two players, combining item collection with carefully placed bombs to demolish structures while avoiding monsters and falling debris.",
+      "zh-CN": "支持一人或两人的平台策略游戏，收集指定物品、布置炸弹拆除建筑，同时躲避怪物和掉落的碎石。"
+    },
     "repo": "https://github.com/Hubert-Rybak/lezac-decompilation",
     "category": "games",
     "stage": "partial",
@@ -164,6 +188,10 @@
     "id": "ultrasunnymoon",
     "name": "UltraSunnyMoon",
     "target": "Pokémon Ultra Sun (Nintendo 3DS)",
+    "target_description": {
+      "en": "A role-playing adventure through the Alola region, where players catch and train Pokémon, assemble a team and progress through a story with turn-based battles.",
+      "zh-CN": "角色扮演游戏，在阿罗拉地区探险、捕捉和培养宝可梦，组建队伍进行回合制对战并推进故事。"
+    },
     "repo": "https://github.com/tylergraydev/UltraSunnyMoon",
     "category": "games",
     "stage": "partial",
@@ -191,6 +219,10 @@
     "id": "opensgolf",
     "name": "OpenSGolf",
     "target": "Sid Meier's SimGolf",
+    "target_description": {
+      "en": "A golf-course management game where players design holes and facilities, keep golfers happy, manage their business and play rounds on their own courses.",
+      "zh-CN": "高尔夫球场经营游戏，设计球道、地形和设施，照顾球员体验、管理收入，也能亲自下场参加比赛。"
+    },
     "repo": "https://github.com/crspytopgn/opensgolf",
     "category": "games",
     "stage": "partial",
@@ -218,6 +250,10 @@
     "id": "wc3ctl",
     "name": "wc3ctl",
     "target": "Warcraft III World Editor",
+    "target_description": {
+      "en": "Warcraft III’s map editor lets players shape terrain, place units and define events and rules to create custom maps, campaigns and game modes.",
+      "zh-CN": "《魔兽争霸 III》附带的地图编辑器，可设计地形、摆放单位、设置事件和规则，制作自定义战役与玩法。"
+    },
     "repo": "https://github.com/GodMephisto/wc3ctl",
     "category": "limited",
     "stage": "compatibility",
@@ -245,6 +281,10 @@
     "id": "unbattletech",
     "name": "UnBattletech",
     "target": "BattleTech: The Crescent Hawk's Inception",
+    "target_description": {
+      "en": "A science-fiction role-playing game about a young mech pilot exploring towns, recruiting companions and upgrading equipment for turn-based combat on foot and in BattleMechs.",
+      "zh-CN": "科幻角色扮演游戏，扮演年轻机甲驾驶员探索城镇、招募伙伴、升级装备，并参与步兵和机甲回合制战斗。"
+    },
     "repo": "https://github.com/velteyn/UnBattletech",
     "category": "games",
     "stage": "partial",

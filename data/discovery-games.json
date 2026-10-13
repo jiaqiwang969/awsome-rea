@@ -3,6 +3,10 @@
     "id": "colonist-local",
     "name": "Private Settlers / Colonist renderer lab",
     "target": "Colonist.io browser client",
+    "target_description": {
+      "en": "An online multiplayer board game where players gather resources, trade, build roads and settlements, and compete to reach the winning score.",
+      "zh-CN": "在线多人资源经营桌游，通过掷骰取得资源、与其他玩家交易、修路和建造村镇，争取先达到获胜分数。"
+    },
     "repo": "https://github.com/natetan/colonist",
     "category": "games",
     "stage": "prototype",
@@ -30,6 +34,10 @@
     "id": "creative-destruction-reborn",
     "name": "Creative Destruction Reborn",
     "target": "Creative Destruction PC 3.0.210.0",
+    "target_description": {
+      "en": "A multiplayer battle-royale shooter where players gather weapons and materials, destroy the environment and build cover while trying to be the last survivor.",
+      "zh-CN": "多人沙盒射击大逃杀，玩家在可破坏的场景中搜集武器和材料、搭建掩体，争取生存到最后。"
+    },
     "repo": "https://github.com/crasyimperior/creative-destruction-reborn",
     "category": "games",
     "stage": "prototype",
@@ -57,6 +65,10 @@
     "id": "mystery-sdl",
     "name": "Mystery SDL",
     "target": "Microsoft Plus! for Windows 95 Mystery screen saver",
+    "target_description": {
+      "en": "A Windows 95 screen saver that fills an idle display with an animated haunted house, black cat, owl, bats and atmospheric sound effects.",
+      "zh-CN": "Windows 95 的动态屏保，在闲置屏幕上展示鬼屋、黑猫、猫头鹰和蝙蝠等动画，并配合音效。"
+    },
     "repo": "https://github.com/viny182/mystery-sdl",
     "category": "desktop",
     "stage": "implementation",
@@ -84,6 +96,10 @@
     "id": "cuphead-apple-port-tools",
     "name": "Cuphead Apple Port Tools",
     "target": "Cuphead GOG Windows Mono installation",
+    "target_description": {
+      "en": "A cartoon-styled action game focused on boss battles, where one or two players shoot, jump and dodge through demanding encounters and platforming stages.",
+      "zh-CN": "复古卡通风格的动作射击游戏，玩家跳跃、射击和躲避攻击，挑战大量头目，也可两人合作闯关。"
+    },
     "repo": "https://github.com/IgnacioPardo/cuphead-apple-port-tools",
     "category": "games",
     "stage": "compatibility",
@@ -111,6 +127,10 @@
     "id": "motorstorm-mv-recomp",
     "name": "MotorStorm Monument Valley recompilation tooling",
     "target": "MotorStorm / MotorStorm: Monument Valley (PlayStation 3)",
+    "target_description": {
+      "en": "An off-road racing game set in Monument Valley, mixing motorcycles, buggies and trucks on rough tracks with multiple routes and aggressive competition.",
+      "zh-CN": "越野竞速游戏，驾驶摩托、越野车或卡车在纪念碑谷赛道混战，选择合适路线并争夺比赛名次。"
+    },
     "repo": "https://github.com/robbe1912/motorstorm-mv-recomp",
     "category": "games",
     "stage": "partial",
@@ -138,6 +158,10 @@
     "id": "redragon-controller",
     "name": "Redragon Keyboard Controller",
     "target": "Redragon keyboard USB HID control protocol",
+    "target_description": {
+      "en": "Redragon’s keyboard configuration software lets users adjust lighting, reassign keys, record macros and save profiles for different games or tasks.",
+      "zh-CN": "红龙键盘配套设置软件，用于调整背光和灯效、重新分配按键、录制宏，并保存不同使用场景的配置。"
+    },
     "repo": "https://github.com/taskengineassistant/redragon-controller",
     "category": "devices",
     "stage": "prototype",
@@ -165,6 +189,10 @@
     "id": "pixel-watch-esim-writer",
     "name": "Watch eSIM Helper",
     "target": "Google Pixel Watch companion Android app 5.0.0.958206140",
+    "target_description": {
+      "en": "Google’s Android companion app pairs a Pixel Watch with a phone and manages watch faces, notifications, connectivity and mobile-network settings.",
+      "zh-CN": "连接安卓手机与 Pixel Watch 的官方应用，用于配对手表、设置表盘和通知，并管理移动网络等选项。"
+    },
     "repo": "https://github.com/AllMySlop/pixel-watch-esim-writer",
     "category": "limited",
     "stage": "compatibility",

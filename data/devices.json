@@ -3,6 +3,10 @@
     "id": "gamemax-linux-apps",
     "name": "GAMEMAX Linux Apps",
     "target": "GAMEMAX IceBurg Digital Software / PcInfoMonitorPro.exe V1.0.0.04",
+    "target_description": {
+      "en": "Companion software for GAMEMAX digital liquid coolers that displays computer temperatures, workloads and other system readings on the cooler screen.",
+      "zh-CN": "GAMEMAX 数显水冷的配套软件，将电脑温度、负载等运行信息显示在散热器的小屏幕上，方便实时查看。"
+    },
     "repo": "https://github.com/oxpoe/Gamemax-linux-apps",
     "category": "devices",
     "stage": "compatibility",
@@ -30,6 +34,10 @@
     "id": "yamaha-rs-232c",
     "name": "Yamaha RS-232C",
     "target": "Yamaha Receiver Editor 3 / Yamaha RX-V2500",
+    "target_description": {
+      "en": "A computer-based editor for Yamaha AV receivers that lets users adjust volume, select inputs, configure sound settings and inspect receiver status.",
+      "zh-CN": "雅马哈影音功放的电脑端设置工具，可调整音量、选择输入源与音效，并查看功放当前状态。"
+    },
     "repo": "https://github.com/zqushair/yamaha-rs-232c",
     "category": "devices",
     "stage": "compatibility",
@@ -57,6 +65,10 @@
     "id": "mouselnk-plus",
     "name": "mouselnk-plus",
     "target": "MouseInc 2.13.4 / Aitiy 1.0.5",
+    "target_description": {
+      "en": "Windows mouse and desktop productivity tools that use gestures, shortcuts and enhanced controls to simplify common commands, window switching and screen capture.",
+      "zh-CN": "Windows 鼠标与桌面效率工具，可用手势、快捷键和增强操作完成常用命令、窗口切换与截图等任务。"
+    },
     "repo": "https://github.com/Aafff623/mouselnk-plus",
     "category": "desktop",
     "stage": "prototype",
@@ -84,6 +96,10 @@
     "id": "kensington-verimark-it-linux",
     "name": "Kensington VeriMark IT Linux",
     "target": "Kensington VeriMark IT Windows driver 6.0.20.1123 / synaWudfBioUsb123.dll",
+    "target_description": {
+      "en": "Windows driver software for the VeriMark IT fingerprint reader, enabling fingerprint enrollment and verification for computer sign-in and supported identity checks.",
+      "zh-CN": "VeriMark IT 指纹识别器的 Windows 配套驱动，让用户录入和验证指纹，完成电脑登录与身份验证。"
+    },
     "repo": "https://github.com/rishubil/kensington-verimark-it-linux",
     "category": "devices",
     "stage": "compatibility",
@@ -111,6 +127,10 @@
     "id": "roborocli",
     "name": "roborocli",
     "target": "Roborock Android app 4.74.08",
+    "target_description": {
+      "en": "The mobile companion app for Roborock cleaning devices, used to start cleaning, schedule jobs, manage room maps and adjust cleaning preferences.",
+      "zh-CN": "石头清洁设备的手机配套应用，可启动清扫、安排定时任务、管理房间地图，并调整清洁区域与偏好设置。"
+    },
     "repo": "https://github.com/jwmoss/roborocli",
     "category": "limited",
     "stage": "compatibility",
@@ -138,6 +158,10 @@
     "id": "motec-clone",
     "name": "motec_clone",
     "target": "MoTeC i2",
+    "target_description": {
+      "en": "Motorsport data analysis software that turns recorded vehicle measurements into graphs and comparisons, helping drivers and engineers review laps and vehicle behavior.",
+      "zh-CN": "赛车数据分析软件，将车辆记录的数据呈现为曲线与对比结果，帮助车手和工程师分析圈速、驾驶表现及车辆状态。"
+    },
     "repo": "https://github.com/therealjohnwall1/motec_clone",
     "category": "limited",
     "stage": "prototype",
@@ -165,6 +189,10 @@
     "id": "ha-lixiang",
     "name": "ha-lixiang",
     "target": "Li Auto Android app / Li ONE vehicle support",
+    "target_description": {
+      "en": "Li Auto’s vehicle companion app lets owners check vehicle status and location and remotely manage supported functions such as locks and climate control.",
+      "zh-CN": "理想汽车的车主配套应用，可查看车辆状态与位置，并远程操作车锁、空调等车辆支持的功能。"
+    },
     "repo": "https://github.com/C3H3-AI/ha-lixiang",
     "category": "devices",
     "stage": "compatibility",

@@ -3,6 +3,10 @@
     "id": "everything-for-mac",
     "name": "EFM",
     "target": "Everything 1.5",
+    "target_description": {
+      "en": "Find files and folders on a Windows computer by typing part of their names, without opening drives and folders one by one.",
+      "zh-CN": "输入文件名或其中几个字，就能快速找到 Windows 电脑里的文件和文件夹，不用逐个磁盘翻找。"
+    },
     "repo": "https://github.com/minsuRob/everything-for-mac",
     "category": "desktop",
     "stage": "implementation",
@@ -29,6 +33,10 @@
     "id": "glide",
     "name": "Glide",
     "target": "Screen Studio",
+    "target_description": {
+      "en": "A macOS screen recorder that adds automatic zoom, smooth cursor movement and polished backgrounds to turn demonstrations and tutorials into shareable videos.",
+      "zh-CN": "macOS 录屏工具，可自动放大操作区域、美化光标和背景，帮助用户制作软件演示、教程与产品介绍视频。"
+    },
     "repo": "https://github.com/michaelshimeles/glide",
     "category": "media",
     "stage": "implementation",
@@ -56,6 +64,10 @@
     "id": "qtranslate-re",
     "name": "qtranslate-re",
     "target": "QTranslate 6.10",
+    "target_description": {
+      "en": "A Windows translation tool that sends selected or typed text to online translation services and offers convenient popups, pronunciation and translation history.",
+      "zh-CN": "Windows 翻译工具，可将选中或输入的文字交给在线翻译服务，提供便捷弹窗、发音和翻译历史。"
+    },
     "repo": "https://github.com/quangdang46/QTranslate",
     "category": "desktop",
     "stage": "implementation",
@@ -83,6 +95,10 @@
     "id": "tuneox",
     "name": "TuneOx",
     "target": "rekordbox 7",
+    "target_description": {
+      "en": "DJ software for organizing music, analyzing tracks, preparing cue points and playlists, and performing mixes with compatible DJ equipment.",
+      "zh-CN": "面向 DJ 的音乐管理与演出软件，用于整理曲库、分析歌曲、设置提示点和播放列表，并配合设备混音演出。"
+    },
     "repo": "https://github.com/sousa-stack/tuneox",
     "category": "media",
     "stage": "prototype",
@@ -110,6 +126,10 @@
     "id": "flowdeck",
     "name": "Flowdeck",
     "target": "Trello",
+    "target_description": {
+      "en": "A collaborative planning tool that organizes tasks into boards, lists and cards so teams can assign work, set deadlines and track progress.",
+      "zh-CN": "团队任务与项目管理工具，用看板、列表和卡片组织工作，便于分配负责人、设置截止时间并跟踪进度。"
+    },
     "repo": "https://github.com/utkarshraj2004/Flowdeck",
     "category": "web",
     "stage": "implementation",
@@ -136,6 +156,10 @@
     "id": "terminal-rs",
     "name": "terminal-rs",
     "target": "TradingView chart behavior",
+    "target_description": {
+      "en": "A market charting platform for following asset prices, applying technical indicators, drawing chart annotations and maintaining watchlists across different financial markets.",
+      "zh-CN": "金融行情与图表平台，可查看不同市场的价格走势、叠加技术指标、绘制图表标记，并管理自选关注列表。"
+    },
     "repo": "https://github.com/michaelshimeles/terminal-rs",
     "category": "web",
     "stage": "implementation",
@@ -162,6 +186,10 @@
     "id": "nixiangmingli",
     "name": "nixiangmingli",
     "target": "FateTell / FateMaster.AI",
+    "target_description": {
+      "en": "Chinese astrology and divination services that generate birth charts, interpret fortunes and offer AI conversations about personality, relationships, careers and daily life.",
+      "zh-CN": "基于八字等传统命理提供排盘、运势解读和 AI 对话，用于浏览个人性格、关系、事业与日常生活主题的解读。"
+    },
     "repo": "https://github.com/ds1828743190-oss/nixiangmingli",
     "category": "web",
     "stage": "prototype",
@@ -189,6 +217,10 @@
     "id": "lento",
     "name": "Lento",
     "target": "Transcribe! 9.70.1",
+    "target_description": {
+      "en": "A music transcription and practice tool that slows recordings without changing pitch, loops passages and helps musicians identify notes and chords by ear.",
+      "zh-CN": "放慢录音而不改变音高，还能反复播放小片段，帮助乐手听清音符和和弦、记录乐谱或练习演奏。"
+    },
     "repo": "https://github.com/andrew-vasquez/transcribe-rebuild",
     "category": "limited",
     "stage": "implementation",
@@ -215,6 +247,10 @@
     "id": "mbrs",
     "name": "mbrs / Modbus Studio",
     "target": "Modbus Poll",
+    "target_description": {
+      "en": "A Windows industrial communication tester for reading and changing Modbus device values, monitoring data and diagnosing communication problems during setup and development.",
+      "zh-CN": "Windows 工业通信测试工具，可读取和修改 Modbus 设备数据、持续监视变化，帮助调试设备与排查通信问题。"
+    },
     "repo": "https://github.com/kostyk348/mbrs",
     "category": "limited",
     "stage": "implementation",
@@ -242,6 +278,10 @@
     "id": "wow-mobile-ios",
     "name": "wow-mobile-ios",
     "target": "World of Warcraft",
+    "target_description": {
+      "en": "An online fantasy role-playing game where players explore a shared world, complete quests, develop characters and tackle dungeons or battles with others.",
+      "zh-CN": "大型多人在线奇幻角色扮演游戏，玩家可探索世界、完成任务、培养角色，并与他人组队挑战副本或参与对战。"
+    },
     "repo": "https://github.com/wubing733-prog/wow-mobile-ios",
     "category": "limited",
     "stage": "prototype",

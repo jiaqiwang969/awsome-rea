@@ -3,6 +3,10 @@
     "id": "review",
     "name": "Review — Photoshop-style photo printing",
     "target": "macOS Preview; Adobe Photoshop 2025 Print Settings",
+    "target_description": {
+      "en": "Preview views and annotates images and PDFs; Photoshop edits photos and controls their printed size, placement and color.",
+      "zh-CN": "Preview 用于查看和标注图片、PDF；Photoshop 用于修图，并设置照片打印的尺寸、位置与色彩。"
+    },
     "repo": "https://github.com/KingDomino/review",
     "category": "desktop",
     "stage": "partial",
